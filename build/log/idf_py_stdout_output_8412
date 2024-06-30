@@ -1,0 +1,2659 @@
+
+[0;32mI (707) phy_init: phy_version 4670,719�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 00:26:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22144h (139588) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0003216c vaddr=3ffb0000 size=03730h ( 14128) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000358a4 vaddr=40080000 size=0a774h ( 42868) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=86004h (548868) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=000c602c vaddr=4008a774 size=0bcb4h ( 48308) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (421) cpu_start: Multicore app[0m
+[0;32mI (421) cpu_start: Pro cpu up.[0m
+[0;32mI (421) cpu_start: Starting app cpu, entry point is 0x40081454[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (439) cpu_start: Pro cpu start user code[0m
+[0;32mI (439) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (439) cpu_start: Application information:[0m
+[0;32mI (444) cpu_start: Project name:     DO_AN_I[0m
+[0;32mI (449) cpu_start: App version:      1[0m
+[0;32mI (453) cpu_start: Compile time:     Jun  8 2024 09:14:23[0m
+[0;32mI (459) cpu_start: ELF file SHA256:  46ff3aa325ce8a5a...[0m
+[0;32mI (465) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (470) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (475) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (480) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (485) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (492) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFB7F08 len 000280F8 (160 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (517) heap_init: At 40096428 len 00009BD8 (38 KiB): IRAM[0m
+[0;32mI (525) spi_flash: detected chip: generic[0m
+[0;32mI (528) spi_flash: flash io: dio[0m
+[0;32mI (533) app_start: Starting scheduler on CPU0[0m
+[0;32mI (537) app_start: Starting scheduler on CPU1[0m
+[0;32mI (537) main_task: Started on CPU0[0m
+[0;32mI (547) main_task: Calling app_main()[0m
+[0;32mI (597) example_connect: Start example_connect.[0m
+I (607) wifi:wifi driver task: 3ffc142c, prio:23, stack:6656, core=0
+I (627) wifi:wifi firmware version: ce9244d
+I (627) wifi:wifi certification version: v7.0
+I (627) wifi:config NVS flash: enabled
+I (627) wifi:config nano formating: disabled
+I (637) wifi:Init data frame dynamic rx buffer num: 32
+I (637) wifi:Init management frame dynamic rx buffer num: 32
+I (647) wifi:Init management short buffer num: 32
+I (647) wifi:Init dynamic tx buffer num: 32
+I (657) wifi:Init static rx buffer size: 1600
+I (657) wifi:Init static rx buffer num: 10
+I (657) wifi:Init dynamic rx buffer num: 32
+[0;32mI (667) wifi_init: rx ba win: 6[0m
+[0;32mI (667) wifi_init: tcpip mbox: 32[0m
+[0;32mI (667) wifi_init: udp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp tx win: 5744[0m
+[0;32mI (687) wifi_init: tcp rx win: 5744[0m
+[0;32mI (687) wifi_init: tcp mss: 1440[0m
+[0;32mI (687) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (697) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (707) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (817) wifi:mode : sta (fc:b4:67:51:10:c0)
+I (817) wifi:enable tsf
+[0;32mI (827) example_connect: Connecting to ChampionT...[0m
+[0;32mI (827) example_connect: Waiting for IP(s)[0m
+[0;32mI (2507) RX_TASK: Humadity: 52%[0m
+[0;32mI (2507) RX_TASK: Temperature: 24°C[0m
+I (3237) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1
+I (3237) wifi:state: init -> auth (b0)
+[0;32mI (3537) RX_TASK: Humadity: 52%[0m
+[0;32mI (3537) RX_TASK: Temperature: 24°C[0m
+I (4137) wifi:state: auth -> assoc (0)
+I (4157) wifi:state: assoc -> run (10)
+I (4217) wifi:connected with ChampionT, aid = 2, channel 9, BW20, bssid = 02:e5:89:0c:ef:da
+I (4217) wifi:security: WPA3-SAE, phy: bgn, rssi: -39
+I (4217) wifi:pm start, type: 1
+
+I (4237) wifi:<ba-add>idx:0 (ifx:0, 02:e5:89:0c:ef:da), tid:0, ssn:2, winSize:64
+I (4247) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4557) RX_TASK: Humadity: 52%[0m
+[0;32mI (4557) RX_TASK: Temperature: 24°C[0m
+[0;32mI (5227) esp_netif_handlers: example_netif_sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5227) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 172.20.10.5[0m
+[0;32mI (5587) RX_TASK: Humadity: 52%[0m
+[0;32mI (5587) RX_TASK: Temperature: 24°C[0m
+[0;32mI (5597) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:feb4:67ff:fe51:10c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5597) example_common: Connected to example_netif_sta[0m
+[0;32mI (5607) example_common: - IPv4 address: 172.20.10.5,[0m
+[0;32mI (5607) example_common: - IPv6 address: fe80:0000:0000:0000:feb4:67ff:fe51:10c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5627) main_task: Returned from app_main()[0m
+[0;32mI (5667) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (5677) example: ... allocated socket[0m
+[0;32mI (6207) example: ... connected[0m
+[0;32mI (6207) example: ... socket send success[0m
+[0;32mI (6207) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:15:22Z","entry_id":125,"field1":"24","field2":"52","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (6597) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (6607) RX_TASK: Humadity: 52%[0m
+[0;32mI (6617) RX_TASK: Temperature: 24°C[0m
+[0;32mI (6627) example: 10... [0m
+[0;32mI (7627) example: 9... [0m
+[0;32mI (7637) RX_TASK: Humadity: 52%[0m
+[0;32mI (7637) RX_TASK: Temperature: 24°C[0m
+[0;32mI (8627) example: 8... [0m
+[0;32mI (8657) RX_TASK: Humadity: 52%[0m
+[0;32mI (8657) RX_TASK: Temperature: 24°C[0m
+[0;32mI (9627) example: 7... [0m
+[0;32mI (9687) RX_TASK: Humadity: 52%[0m
+[0;32mI (9687) RX_TASK: Temperature: 24°C[0m
+[0;32mI (10627) example: 6... [0m
+[0;32mI (10707) RX_TASK: Humadity: 52%[0m
+[0;32mI (10707) RX_TASK: Temperature: 24°C[0m
+[0;32mI (11627) example: 5... [0m
+[0;32mI (11737) RX_TASK: Humadity: 52%[0m
+[0;32mI (11737) RX_TASK: Temperature: 24°C[0m
+[0;32mI (12627) example: 4... [0m
+[0;32mI (12757) RX_TASK: Humadity: 52%[0m
+[0;32mI (12757) RX_TASK: Temperature: 24°C[0m
+[0;32mI (13627) example: 3... [0m
+[0;32mI (13787) RX_TASK: Humadity: 52%[0m
+[0;32mI (13787) RX_TASK: Temperature: 24°C[0m
+[0;32mI (14627) example: 2... [0m
+[0;32mI (14807) RX_TASK: Humadity: 51%[0m
+[0;32mI (14807) RX_TASK: Temperature: 24°C[0m
+[0;32mI (15627) example: 1... [0m
+[0;32mI (15837) RX_TASK: Humadity: 51%[0m
+[0;32mI (15837) RX_TASK: Temperature: 24°C[0m
+[0;32mI (16627) example: 0... [0m
+[0;32mI (16857) RX_TASK: Humadity: 51%[0m
+[0;32mI (16857) RX_TASK: Temperature: 24°C[0m
+[0;32mI (17627) example: Starting again![0m
+[0;32mI (17627) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (17627) example: ... allocated socket[0m
+[0;32mI (17887) RX_TASK: Humadity: 51%[0m
+[0;32mI (17887) RX_TASK: Temperature: 24°C[0m
+[0;32mI (17977) example: ... connected[0m
+[0;32mI (17977) example: ... socket send success[0m
+[0;32mI (17977) example: ... set socket receiving timeout success[0m
+0[0;32mI (18497) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (18497) example: 10... [0m
+[0;32mI (18907) RX_TASK: Humadity: 51%[0m
+[0;32mI (18907) RX_TASK: Temperature: 24°C[0m
+[0;32mI (19497) example: 9... [0m
+[0;32mI (19937) RX_TASK: Humadity: 51%[0m
+[0;32mI (19937) RX_TASK: Temperature: 24°C[0m
+[0;32mI (20497) example: 8... [0m
+[0;32mI (20957) RX_TASK: Humadity: 51%[0m
+[0;32mI (20957) RX_TASK: Temperature: 24°C[0m
+[0;32mI (21497) example: 7... [0m
+[0;32mI (21987) RX_TASK: Humadity: 53%[0m
+[0;32mI (21987) RX_TASK: Temperature: 24°C[0m
+[0;32mI (22497) example: 6... [0m
+[0;32mI (23007) RX_TASK: Humadity: 54%[0m
+[0;32mI (23007) RX_TASK: Temperature: 24°C[0m
+[0;32mI (23497) example: 5... [0m
+[0;32mI (24037) RX_TASK: Humadity: 56%[0m
+[0;32mI (24037) RX_TASK: Temperature: 24°C[0m
+[0;32mI (24497) example: 4... [0m
+[0;32mI (25057) RX_TASK: Humadity: 57%[0m
+[0;32mI (25057) RX_TASK: Temperature: 24°C[0m
+[0;32mI (25497) example: 3... [0m
+[0;32mI (26087) RX_TASK: Humadity: 58%[0m
+[0;32mI (26087) RX_TASK: Temperature: 24°C[0m
+[0;32mI (26497) example: 2... [0m
+[0;32mI (27107) RX_TASK: Humadity: 59%[0m
+[0;32mI (27107) RX_TASK: Temperature: 24°C[0m
+[0;32mI (27497) example: 1... [0m
+[0;32mI (28137) RX_TASK: Humadity: 60%[0m
+[0;32mI (28137) RX_TASK: Temperature: 24°C[0m
+[0;32mI (28497) example: 0... [0m
+[0;32mI (29157) RX_TASK: Humadity: 61%[0m
+[0;32mI (29157) RX_TASK: Temperature: 24°C[0m
+[0;32mI (29497) example: Starting again![0m
+[0;32mI (29497) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (29497) example: ... allocated socket[0m
+[0;32mI (29857) example: ... connected[0m
+[0;32mI (29857) example: ... socket send success[0m
+[0;32mI (29857) example: ... set socket receiving timeout success[0m
+[0;32mI (30187) RX_TASK: Humadity: 62%[0m
+[0;32mI (30187) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:15:46Z","entry_id":126,"field1":"24","field2":"61","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (30197) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (30217) example: 10... [0m
+[0;32mI (31207) RX_TASK: Humadity: 63%[0m
+[0;32mI (31207) RX_TASK: Temperature: 24°C[0m
+[0;32mI (31217) example: 9... [0m
+[0;32mI (32217) example: 8... [0m
+[0;32mI (32237) RX_TASK: Humadity: 64%[0m
+[0;32mI (32237) RX_TASK: Temperature: 25°C[0m
+[0;32mI (33217) example: 7... [0m
+[0;32mI (33257) RX_TASK: Humadity: 64%[0m
+[0;32mI (33257) RX_TASK: Temperature: 25°C[0m
+[0;32mI (34217) example: 6... [0m
+[0;32mI (34287) RX_TASK: Humadity: 65%[0m
+[0;32mI (34287) RX_TASK: Temperature: 25°C[0m
+[0;32mI (35217) example: 5... [0m
+[0;32mI (35307) RX_TASK: Humadity: 65%[0m
+[0;32mI (35307) RX_TASK: Temperature: 25°C[0m
+[0;32mI (36217) example: 4... [0m
+[0;32mI (36337) RX_TASK: Humadity: 65%[0m
+[0;32mI (36337) RX_TASK: Temperature: 25°C[0m
+[0;32mI (37217) example: 3... [0m
+[0;32mI (37357) RX_TASK: Humadity: 66%[0m
+[0;32mI (37357) RX_TASK: Temperature: 25°C[0m
+[0;32mI (38217) example: 2... [0m
+[0;32mI (38387) RX_TASK: Humadity: 67%[0m
+[0;32mI (38387) RX_TASK: Temperature: 25°C[0m
+[0;32mI (39217) example: 1... [0m
+[0;32mI (39407) RX_TASK: Humadity: 67%[0m
+[0;32mI (39407) RX_TASK: Temperature: 25°C[0m
+[0;32mI (40217) example: 0... [0m
+[0;32mI (40437) RX_TASK: Humadity: 68%[0m
+[0;32mI (40437) RX_TASK: Temperature: 25°C[0m
+[0;32mI (41217) example: Starting again![0m
+[0;32mI (41217) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (41217) example: ... allocated socket[0m
+[0;32mI (41457) RX_TASK: Humadity: 68%[0m
+[0;32mI (41457) RX_TASK: Temperature: 25°C[0m
+[0;32mI (41837) example: ... connected[0m
+[0;32mI (41837) example: ... socket send success[0m
+[0;32mI (41837) example: ... set socket receiving timeout success[0m
+0[0;32mI (42147) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (42147) example: 10... [0m
+[0;32mI (42487) RX_TASK: Humadity: 66%[0m
+[0;32mI (42487) RX_TASK: Temperature: 25°C[0m
+[0;32mI (43147) example: 9... [0m
+[0;32mI (43507) RX_TASK: Humadity: 65%[0m
+[0;32mI (43507) RX_TASK: Temperature: 25°C[0m
+[0;32mI (44147) example: 8... [0m
+[0;32mI (44537) RX_TASK: Humadity: 63%[0m
+[0;32mI (44537) RX_TASK: Temperature: 25°C[0m
+[0;32mI (45147) example: 7... [0m
+[0;32mI (45557) RX_TASK: Humadity: 62%[0m
+[0;32mI (45557) RX_TASK: Temperature: 25°C[0m
+[0;32mI (46147) example: 6... [0m
+[0;32mI (46587) RX_TASK: Humadity: 60%[0m
+[0;32mI (46587) RX_TASK: Temperature: 25°C[0m
+[0;32mI (47147) example: 5... [0m
+[0;32mI (47607) RX_TASK: Humadity: 59%[0m
+[0;32mI (47607) RX_TASK: Temperature: 25°C[0m
+[0;32mI (48147) example: 4... [0m
+[0;32mI (48637) RX_TASK: Humadity: 58%[0m
+[0;32mI (48637) RX_TASK: Temperature: 25°C[0m
+[0;32mI (49147) example: 3... [0m
+[0;32mI (49657) RX_TASK: Humadity: 57%[0m
+[0;32mI (49657) RX_TASK: Temperature: 25°C[0m
+[0;32mI (50147) example: 2... [0m
+[0;32mI (50687) RX_TASK: Humadity: 57%[0m
+[0;32mI (50687) RX_TASK: Temperature: 25°C[0m
+[0;32mI (51147) example: 1... [0m
+[0;32mI (51707) RX_TASK: Humadity: 56%[0m
+[0;32mI (51707) RX_TASK: Temperature: 25°C[0m
+[0;32mI (52147) example: 0... [0m
+[0;32mI (52737) RX_TASK: Humadity: 55%[0m
+[0;32mI (52737) RX_TASK: Temperature: 25°C[0m
+[0;32mI (53147) example: Starting again![0m
+[0;32mI (53147) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (53147) example: ... allocated socket[0m
+[0;32mI (53507) example: ... connected[0m
+[0;32mI (53517) example: ... socket send success[0m
+[0;32mI (53517) example: ... set socket receiving timeout success[0m
+[0;32mI (53757) RX_TASK: Humadity: 56%[0m
+[0;32mI (53757) RX_TASK: Temperature: 25°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:16:09Z","entry_id":127,"field1":"25","field2":"55","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (54237) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (54247) example: 10... [0m
+[0;32mI (54787) RX_TASK: Humadity: 57%[0m
+[0;32mI (54787) RX_TASK: Temperature: 25°C[0m
+[0;32mI (55257) example: 9... [0m
+[0;32mI (55807) RX_TASK: Humadity: 59%[0m
+[0;32mI (55807) RX_TASK: Temperature: 25°C[0m
+[0;32mI (56257) example: 8... [0m
+[0;32mI (56827) RX_TASK: Humadity: 60%[0m
+[0;32mI (56827) RX_TASK: Temperature: 25°C[0m
+[0;32mI (57257) example: 7... [0m
+[0;32mI (58127) RX_TASK: Humadity: 61%[0m
+[0;32mI (58127) RX_TASK: Temperature: 25°C[0m
+[0;32mI (58257) example: 6... [0m
+[0;32mI (59147) RX_TASK: Humadity: 62%[0m
+[0;32mI (59147) RX_TASK: Temperature: 25°C[0m
+[0;32mI (59257) example: 5... [0m
+[0;32mI (60177) RX_TASK: Humadity: 63%[0m
+[0;32mI (60177) RX_TASK: Temperature: 25°C[0m
+[0;32mI (60257) example: 4... [0m
+[0;32mI (61197) RX_TASK: Humadity: 63%[0m
+[0;32mI (61197) RX_TASK: Temperature: 25°C[0m
+[0;32mI (61257) example: 3... [0m
+[0;32mI (62227) RX_TASK: Humadity: 64%[0m
+[0;32mI (62227) RX_TASK: Temperature: 25°C[0m
+[0;32mI (62257) example: 2... [0m
+[0;32mI (63247) RX_TASK: Humadity: 64%[0m
+[0;32mI (63247) RX_TASK: Temperature: 25°C[0m
+[0;32mI (63257) example: 1... [0m
+[0;32mI (64257) example: 0... [0m
+[0;32mI (64277) RX_TASK: Humadity: 64%[0m
+[0;32mI (64277) RX_TASK: Temperature: 25°C[0m
+[0;32mI (65257) example: Starting again![0m
+[0;32mI (65297) RX_TASK: Humadity: 65%[0m
+[0;32mI (65297) RX_TASK: Temperature: 25°C[0m
+[0;32mI (65487) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (65497) example: ... allocated socket[0m
+[0;32mI (65797) example: ... connected[0m
+[0;32mI (65807) example: ... socket send success[0m
+[0;32mI (65807) example: ... set socket receiving timeout success[0m
+[0;32mI (66327) RX_TASK: Humadity: 65%[0m
+[0;32mI (66327) RX_TASK: Temperature: 25°C[0m
+0[0;32mI (66427) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (66427) example: 10... [0m
+[0;32mI (67347) RX_TASK: Humadity: 66%[0m
+[0;32mI (67347) RX_TASK: Temperature: 25°C[0m
+[0;32mI (67427) example: 9... [0m
+[0;32mI (68377) RX_TASK: Humadity: 67%[0m
+[0;32mI (68377) RX_TASK: Temperature: 25°C[0m
+[0;32mI (68427) example: 8... [0m
+[0;32mI (69397) RX_TASK: Humadity: 67%[0m
+[0;32mI (69397) RX_TASK: Temperature: 25°C[0m
+[0;32mI (69427) example: 7... [0m
+[0;32mI (70427) RX_TASK: Humadity: 68%[0m
+[0;32mI (70427) RX_TASK: Temperature: 25°C[0m
+[0;32mI (70427) example: 6... [0m
+[0;32mI (71427) example: 5... [0m
+[0;32mI (71447) RX_TASK: Humadity: 68%[0m
+[0;32mI (71447) RX_TASK: Temperature: 25°C[0m
+[0;32mI (72427) example: 4... [0m
+[0;32mI (72477) RX_TASK: Humadity: 69%[0m
+[0;32mI (72477) RX_TASK: Temperature: 25°C[0m
+[0;32mI (73427) example: 3... [0m
+[0;32mI (73497) RX_TASK: Humadity: 69%[0m
+[0;32mI (73497) RX_TASK: Temperature: 25°C[0m
+[0;32mI (74427) example: 2... [0m
+[0;32mI (74527) RX_TASK: Humadity: 69%[0m
+[0;32mI (74527) RX_TASK: Temperature: 25°C[0m
+[0;32mI (75427) example: 1... [0m
+[0;32mI (75547) RX_TASK: Humadity: 69%[0m
+[0;32mI (75547) RX_TASK: Temperature: 25°C[0m
+[0;32mI (76427) example: 0... [0m
+[0;32mI (76577) RX_TASK: Humadity: 69%[0m
+[0;32mI (76577) RX_TASK: Temperature: 25°C[0m
+[0;32mI (77427) example: Starting again![0m
+[0;32mI (77427) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (77427) example: ... allocated socket[0m
+[0;32mI (77597) RX_TASK: Humadity: 69%[0m
+[0;32mI (77597) RX_TASK: Temperature: 25°C[0m
+[0;32mI (77817) example: ... connected[0m
+[0;32mI (77817) example: ... socket send success[0m
+[0;32mI (77817) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:16:34Z","entry_id":128,"field1":"25","field2":"69","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (78397) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (78417) example: 10... [0m
+[0;32mI (78627) RX_TASK: Humadity: 69%[0m
+[0;32mI (78627) RX_TASK: Temperature: 25°C[0m
+[0;32mI (79417) example: 9... [0m
+[0;32mI (79647) RX_TASK: Humadity: 69%[0m
+[0;32mI (79647) RX_TASK: Temperature: 25°C[0m
+[0;32mI (80417) example: 8... [0m
+[0;32mI (80677) RX_TASK: Humadity: 68%[0m
+[0;32mI (80677) RX_TASK: Temperature: 25°C[0m
+[0;32mI (81417) example: 7... [0m
+[0;32mI (81697) RX_TASK: Humadity: 68%[0m
+[0;32mI (81697) RX_TASK: Temperature: 25°C[0m
+[0;32mI (82417) example: 6... [0m
+[0;32mI (82727) RX_TASK: Humadity: 68%[0m
+[0;32mI (82727) RX_TASK: Temperature: 25°C[0m
+[0;32mI (83417) example: 5... [0m
+[0;32mI (83747) RX_TASK: Humadity: 67%[0m
+[0;32mI (83747) RX_TASK: Temperature: 25°C[0m
+[0;32mI (84417) example: 4... [0m
+[0;32mI (84777) RX_TASK: Humadity: 66%[0m
+[0;32mI (84777) RX_TASK: Temperature: 25°C[0m
+[0;32mI (85417) example: 3... [0m
+[0;32mI (85797) RX_TASK: Humadity: 64%[0m
+[0;32mI (85797) RX_TASK: Temperature: 25°C[0m
+[0;32mI (86417) example: 2... [0m
+[0;32mI (86827) RX_TASK: Humadity: 62%[0m
+[0;32mI (86827) RX_TASK: Temperature: 25°C[0m
+[0;32mI (87417) example: 1... [0m
+[0;32mI (87847) RX_TASK: Humadity: 61%[0m
+[0;32mI (87847) RX_TASK: Temperature: 25°C[0m
+[0;32mI (88417) example: 0... [0m
+[0;32mI (88877) RX_TASK: Humadity: 60%[0m
+[0;32mI (88877) RX_TASK: Temperature: 25°C[0m
+[0;32mI (89417) example: Starting again![0m
+[0;32mI (89417) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (89417) example: ... allocated socket[0m
+[0;32mI (89787) example: ... connected[0m
+[0;32mI (89787) example: ... socket send success[0m
+[0;32mI (89787) example: ... set socket receiving timeout success[0m
+[0;32mI (89897) RX_TASK: Humadity: 59%[0m
+[0;32mI (89897) RX_TASK: Temperature: 25°C[0m
+0[0;32mI (90377) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (90387) example: 10... [0m
+[0;32mI (90927) RX_TASK: Humadity: 58%[0m
+[0;32mI (90927) RX_TASK: Temperature: 25°C[0m
+[0;32mI (91387) example: 9... [0m
+[0;32mI (91947) RX_TASK: Humadity: 57%[0m
+[0;32mI (91947) RX_TASK: Temperature: 25°C[0m
+[0;32mI (92387) example: 8... [0m
+[0;32mI (92977) RX_TASK: Humadity: 56%[0m
+[0;32mI (92977) RX_TASK: Temperature: 25°C[0m
+[0;32mI (93387) example: 7... [0m
+[0;32mI (93997) RX_TASK: Humadity: 56%[0m
+[0;32mI (93997) RX_TASK: Temperature: 25°C[0m
+[0;32mI (94387) example: 6... [0m
+[0;32mI (95027) RX_TASK: Humadity: 55%[0m
+[0;32mI (95027) RX_TASK: Temperature: 25°C[0m
+[0;32mI (95387) example: 5... [0m
+[0;32mI (96047) RX_TASK: Humadity: 55%[0m
+[0;32mI (96047) RX_TASK: Temperature: 25°C[0m
+[0;32mI (96387) example: 4... [0m
+[0;32mI (97077) RX_TASK: Humadity: 54%[0m
+[0;32mI (97077) RX_TASK: Temperature: 25°C[0m
+[0;32mI (97387) example: 3... [0m
+[0;32mI (98097) RX_TASK: Humadity: 53%[0m
+[0;32mI (98097) RX_TASK: Temperature: 25°C[0m
+[0;32mI (98387) example: 2... [0m
+[0;32mI (99127) RX_TASK: Humadity: 53%[0m
+[0;32mI (99127) RX_TASK: Temperature: 25°C[0m
+[0;32mI (99387) example: 1... [0m
+[0;32mI (100147) RX_TASK: Humadity: 53%[0m
+[0;32mI (100147) RX_TASK: Temperature: 25°C[0m
+[0;32mI (100387) example: 0... [0m
+[0;32mI (101177) RX_TASK: Humadity: 53%[0m
+[0;32mI (101177) RX_TASK: Temperature: 25°C[0m
+[0;32mI (101387) example: Starting again![0m
+[0;32mI (101387) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (101387) example: ... allocated socket[0m
+[0;32mI (101867) example: ... connected[0m
+[0;32mI (101867) example: ... socket send success[0m
+[0;32mI (101867) example: ... set socket receiving timeout success[0m
+[0;32mI (102197) RX_TASK: Humadity: 52%[0m
+[0;32mI (102197) RX_TASK: Temperature: 25°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:16:58Z","entry_id":129,"field1":"25","field2":"53","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (102407) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (102427) example: 10... [0m
+[0;32mI (103227) RX_TASK: Humadity: 52%[0m
+[0;32mI (103227) RX_TASK: Temperature: 25°C[0m
+[0;32mI (103427) example: 9... [0m
+[0;32mI (104247) RX_TASK: Humadity: 52%[0m
+[0;32mI (104247) RX_TASK: Temperature: 25°C[0m
+[0;32mI (104427) example: 8... [0m
+[0;32mI (105277) RX_TASK: Humadity: 52%[0m
+[0;32mI (105277) RX_TASK: Temperature: 25°C[0m
+[0;32mI (105427) example: 7... [0m
+[0;32mI (106297) RX_TASK: Humadity: 51%[0m
+[0;32mI (106297) RX_TASK: Temperature: 25°C[0m
+[0;32mI (106427) example: 6... [0m
+[0;32mI (107327) RX_TASK: Humadity: 51%[0m
+[0;32mI (107327) RX_TASK: Temperature: 25°C[0m
+[0;32mI (107427) example: 5... [0m
+[0;32mI (108347) RX_TASK: Humadity: 51%[0m
+[0;32mI (108347) RX_TASK: Temperature: 25°C[0m
+[0;32mI (108427) example: 4... [0m
+[0;32mI (109377) RX_TASK: Humadity: 51%[0m
+[0;32mI (109377) RX_TASK: Temperature: 25°C[0m
+[0;32mI (109427) example: 3... [0m
+[0;32mI (110397) RX_TASK: Humadity: 51%[0m
+[0;32mI (110397) RX_TASK: Temperature: 25°C[0m
+[0;32mI (110427) example: 2... [0m
+[0;32mI (111427) RX_TASK: Humadity: 51%[0m
+[0;32mI (111427) RX_TASK: Temperature: 25°C[0m
+[0;32mI (111427) example: 1... [0m
+[0;32mI (112427) example: 0... [0m
+[0;32mI (112447) RX_TASK: Humadity: 51%[0m
+[0;32mI (112447) RX_TASK: Temperature: 25°C[0m
+[0;32mI (113427) example: Starting again![0m
+[0;32mI (113427) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (113427) example: ... allocated socket[0m
+[0;32mI (113477) RX_TASK: Humadity: 51%[0m
+[0;32mI (113477) RX_TASK: Temperature: 25°C[0m
+[0;32mI (114497) RX_TASK: Humadity: 51%[0m
+[0;32mI (114497) RX_TASK: Temperature: 25°C[0m
+[0;32mI (115267) example: ... connected[0m
+[0;32mI (115267) example: ... socket send success[0m
+[0;32mI (115267) example: ... set socket receiving timeout success[0m
+[0;32mI (115527) RX_TASK: Humadity: 51%[0m
+[0;32mI (115527) RX_TASK: Temperature: 25°C[0m
+[0;32mI (116547) RX_TASK: Humadity: 51%[0m
+[0;32mI (116547) RX_TASK: Temperature: 25°C[0m
+0[0;32mI (117157) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (117157) example: 10... [0m
+[0;32mI (117577) RX_TASK: Humadity: 51%[0m
+[0;32mI (117577) RX_TASK: Temperature: 25°C[0m
+[0;32mI (118157) example: 9... [0m
+[0;32mI (118597) RX_TASK: Humadity: 51%[0m
+[0;32mI (118597) RX_TASK: Temperature: 25°C[0m
+[0;32mI (119157) example: 8... [0m
+[0;32mI (119627) RX_TASK: Humadity: 51%[0m
+[0;32mI (119627) RX_TASK: Temperature: 24°C[0m
+[0;32mI (120157) example: 7... [0m
+[0;32mI (120647) RX_TASK: Humadity: 51%[0m
+[0;32mI (120647) RX_TASK: Temperature: 24°C[0m
+[0;32mI (121157) example: 6... [0m
+[0;32mI (121677) RX_TASK: Humadity: 51%[0m
+[0;32mI (121677) RX_TASK: Temperature: 24°C[0m
+[0;32mI (122157) example: 5... [0m
+[0;32mI (122697) RX_TASK: Humadity: 51%[0m
+[0;32mI (122697) RX_TASK: Temperature: 24°C[0m
+[0;32mI (123157) example: 4... [0m
+[0;32mI (123727) RX_TASK: Humadity: 51%[0m
+[0;32mI (123727) RX_TASK: Temperature: 24°C[0m
+[0;32mI (124157) example: 3... [0m
+[0;32mI (124747) RX_TASK: Humadity: 51%[0m
+[0;32mI (124747) RX_TASK: Temperature: 24°C[0m
+[0;32mI (125157) example: 2... [0m
+[0;32mI (125777) RX_TASK: Humadity: 51%[0m
+[0;32mI (125777) RX_TASK: Temperature: 24°C[0m
+[0;32mI (126157) example: 1... [0m
+[0;32mI (126797) RX_TASK: Humadity: 51%[0m
+[0;32mI (126797) RX_TASK: Temperature: 24°C[0m
+[0;32mI (127157) example: 0... [0m
+[0;32mI (127827) RX_TASK: Humadity: 51%[0m
+[0;32mI (127827) RX_TASK: Temperature: 24°C[0m
+[0;32mI (128157) example: Starting again![0m
+[0;32mI (128157) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (128157) example: ... allocated socket[0m
+[0;32mI (128827) example: ... connected[0m
+[0;32mI (128827) example: ... socket send success[0m
+[0;32mI (128837) example: ... set socket receiving timeout success[0m
+[0;32mI (128847) RX_TASK: Humadity: 51%[0m
+[0;32mI (128847) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:17:25Z","entry_id":130,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (129447) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (129457) example: 10... [0m
+[0;32mI (129877) RX_TASK: Humadity: 51%[0m
+[0;32mI (129877) RX_TASK: Temperature: 24°C[0m
+[0;32mI (130467) example: 9... [0m
+[0;32mI (130897) RX_TASK: Humadity: 51%[0m
+[0;32mI (130897) RX_TASK: Temperature: 24°C[0m
+[0;32mI (131467) example: 8... [0m
+[0;32mI (131927) RX_TASK: Humadity: 51%[0m
+[0;32mI (131927) RX_TASK: Temperature: 24°C[0m
+[0;32mI (132467) example: 7... [0m
+[0;32mI (132947) RX_TASK: Humadity: 51%[0m
+[0;32mI (132947) RX_TASK: Temperature: 24°C[0m
+[0;32mI (133467) example: 6... [0m
+[0;32mI (133977) RX_TASK: Humadity: 51%[0m
+[0;32mI (133977) RX_TASK: Temperature: 24°C[0m
+[0;32mI (134467) example: 5... [0m
+[0;32mI (134997) RX_TASK: Humadity: 51%[0m
+[0;32mI (134997) RX_TASK: Temperature: 24°C[0m
+[0;32mI (135467) example: 4... [0m
+[0;32mI (136027) RX_TASK: Humadity: 51%[0m
+[0;32mI (136027) RX_TASK: Temperature: 24°C[0m
+[0;32mI (136467) example: 3... [0m
+[0;32mI (137047) RX_TASK: Humadity: 50%[0m
+[0;32mI (137047) RX_TASK: Temperature: 24°C[0m
+[0;32mI (137467) example: 2... [0m
+[0;32mI (138077) RX_TASK: Humadity: 50%[0m
+[0;32mI (138077) RX_TASK: Temperature: 24°C[0m
+[0;32mI (138467) example: 1... [0m
+[0;32mI (139097) RX_TASK: Humadity: 51%[0m
+[0;32mI (139097) RX_TASK: Temperature: 24°C[0m
+[0;32mI (139467) example: 0... [0m
+[0;32mI (140127) RX_TASK: Humadity: 51%[0m
+[0;32mI (140127) RX_TASK: Temperature: 24°C[0m
+[0;32mI (140467) example: Starting again![0m
+[0;32mI (140467) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (140467) example: ... allocated socket[0m
+[0;32mI (141097) example: ... connected[0m
+[0;32mI (141097) example: ... socket send success[0m
+[0;32mI (141097) example: ... set socket receiving timeout success[0m
+[0;32mI (141147) RX_TASK: Humadity: 50%[0m
+[0;32mI (141147) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (141717) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (141717) example: 10... [0m
+[0;32mI (142177) RX_TASK: Humadity: 50%[0m
+[0;32mI (142177) RX_TASK: Temperature: 24°C[0m
+[0;32mI (142717) example: 9... [0m
+[0;32mI (143197) RX_TASK: Humadity: 50%[0m
+[0;32mI (143197) RX_TASK: Temperature: 24°C[0m
+[0;32mI (143717) example: 8... [0m
+[0;32mI (144227) RX_TASK: Humadity: 50%[0m
+[0;32mI (144227) RX_TASK: Temperature: 24°C[0m
+[0;32mI (144717) example: 7... [0m
+[0;32mI (145247) RX_TASK: Humadity: 51%[0m
+[0;32mI (145247) RX_TASK: Temperature: 24°C[0m
+[0;32mI (145717) example: 6... [0m
+[0;32mI (146277) RX_TASK: Humadity: 51%[0m
+[0;32mI (146277) RX_TASK: Temperature: 24°C[0m
+[0;32mI (146717) example: 5... [0m
+[0;32mI (147297) RX_TASK: Humadity: 51%[0m
+[0;32mI (147297) RX_TASK: Temperature: 24°C[0m
+[0;32mI (147717) example: 4... [0m
+[0;32mI (148327) RX_TASK: Humadity: 51%[0m
+[0;32mI (148327) RX_TASK: Temperature: 24°C[0m
+[0;32mI (148717) example: 3... [0m
+[0;32mI (149347) RX_TASK: Humadity: 51%[0m
+[0;32mI (149347) RX_TASK: Temperature: 24°C[0m
+[0;32mI (149717) example: 2... [0m
+[0;32mI (150377) RX_TASK: Humadity: 51%[0m
+[0;32mI (150377) RX_TASK: Temperature: 24°C[0m
+[0;32mI (150717) example: 1... [0m
+[0;32mI (151397) RX_TASK: Humadity: 50%[0m
+[0;32mI (151397) RX_TASK: Temperature: 24°C[0m
+[0;32mI (151717) example: 0... [0m
+[0;32mI (152427) RX_TASK: Humadity: 51%[0m
+[0;32mI (152427) RX_TASK: Temperature: 24°C[0m
+[0;32mI (152717) example: Starting again![0m
+[0;32mI (153047) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (153057) example: ... allocated socket[0m
+[0;32mI (153447) RX_TASK: Humadity: 50%[0m
+[0;32mI (153447) RX_TASK: Temperature: 24°C[0m
+[0;32mI (153677) example: ... connected[0m
+[0;32mI (153677) example: ... socket send success[0m
+[0;32mI (153677) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:17:49Z","entry_id":131,"field1":"24","field2":"50","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (154107) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (154127) example: 10... [0m
+[0;32mI (154477) RX_TASK: Humadity: 50%[0m
+[0;32mI (154477) RX_TASK: Temperature: 24°C[0m
+[0;32mI (155127) example: 9... [0m
+[0;32mI (155497) RX_TASK: Humadity: 50%[0m
+[0;32mI (155497) RX_TASK: Temperature: 24°C[0m
+[0;32mI (156127) example: 8... [0m
+[0;32mI (156527) RX_TASK: Humadity: 51%[0m
+[0;32mI (156527) RX_TASK: Temperature: 24°C[0m
+[0;32mI (157127) example: 7... [0m
+[0;32mI (157547) RX_TASK: Humadity: 51%[0m
+[0;32mI (157547) RX_TASK: Temperature: 24°C[0m
+[0;32mI (158127) example: 6... [0m
+[0;32mI (158577) RX_TASK: Humadity: 51%[0m
+[0;32mI (158577) RX_TASK: Temperature: 24°C[0m
+[0;32mI (159127) example: 5... [0m
+[0;32mI (159597) RX_TASK: Humadity: 51%[0m
+[0;32mI (159597) RX_TASK: Temperature: 24°C[0m
+[0;32mI (160127) example: 4... [0m
+[0;32mI (160627) RX_TASK: Humadity: 51%[0m
+[0;32mI (160627) RX_TASK: Temperature: 24°C[0m
+[0;32mI (161127) example: 3... [0m
+[0;32mI (161647) RX_TASK: Humadity: 51%[0m
+[0;32mI (161647) RX_TASK: Temperature: 24°C[0m
+[0;32mI (162127) example: 2... [0m
+[0;32mI (162677) RX_TASK: Humadity: 51%[0m
+[0;32mI (162677) RX_TASK: Temperature: 24°C[0m
+[0;32mI (163127) example: 1... [0m
+[0;32mI (163697) RX_TASK: Humadity: 51%[0m
+[0;32mI (163697) RX_TASK: Temperature: 24°C[0m
+[0;32mI (164127) example: 0... [0m
+[0;32mI (164727) RX_TASK: Humadity: 51%[0m
+[0;32mI (164727) RX_TASK: Temperature: 24°C[0m
+[0;32mI (165127) example: Starting again![0m
+[0;32mI (165127) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (165127) example: ... allocated socket[0m
+[0;32mI (165667) example: ... connected[0m
+[0;32mI (165677) example: ... socket send success[0m
+[0;32mI (165677) example: ... set socket receiving timeout success[0m
+[0;32mI (165747) RX_TASK: Humadity: 51%[0m
+[0;32mI (165747) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (166267) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (166267) example: 10... [0m
+[0;32mI (166777) RX_TASK: Humadity: 51%[0m
+[0;32mI (166777) RX_TASK: Temperature: 24°C[0m
+[0;32mI (167267) example: 9... [0m
+[0;32mI (167797) RX_TASK: Humadity: 51%[0m
+[0;32mI (167797) RX_TASK: Temperature: 24°C[0m
+[0;32mI (168267) example: 8... [0m
+[0;32mI (168827) RX_TASK: Humadity: 51%[0m
+[0;32mI (168827) RX_TASK: Temperature: 24°C[0m
+[0;32mI (169267) example: 7... [0m
+[0;32mI (169847) RX_TASK: Humadity: 52%[0m
+[0;32mI (169847) RX_TASK: Temperature: 24°C[0m
+[0;32mI (170267) example: 6... [0m
+[0;32mI (170877) RX_TASK: Humadity: 52%[0m
+[0;32mI (170877) RX_TASK: Temperature: 24°C[0m
+[0;32mI (171267) example: 5... [0m
+[0;32mI (171897) RX_TASK: Humadity: 52%[0m
+[0;32mI (171897) RX_TASK: Temperature: 24°C[0m
+[0;32mI (172267) example: 4... [0m
+[0;32mI (172927) RX_TASK: Humadity: 52%[0m
+[0;32mI (172927) RX_TASK: Temperature: 24°C[0m
+[0;32mI (173267) example: 3... [0m
+[0;32mI (173947) RX_TASK: Humadity: 52%[0m
+[0;32mI (173947) RX_TASK: Temperature: 24°C[0m
+[0;32mI (174267) example: 2... [0m
+[0;32mI (174977) RX_TASK: Humadity: 52%[0m
+[0;32mI (174977) RX_TASK: Temperature: 24°C[0m
+[0;32mI (175267) example: 1... [0m
+[0;32mI (175997) RX_TASK: Humadity: 52%[0m
+[0;32mI (175997) RX_TASK: Temperature: 24°C[0m
+[0;32mI (176267) example: 0... [0m
+[0;32mI (177027) RX_TASK: Humadity: 52%[0m
+[0;32mI (177027) RX_TASK: Temperature: 24°C[0m
+[0;32mI (177267) example: Starting again![0m
+[0;32mI (177267) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (177267) example: ... allocated socket[0m
+[0;32mI (177637) example: ... connected[0m
+[0;32mI (177637) example: ... socket send success[0m
+[0;32mI (177637) example: ... set socket receiving timeout success[0m
+[0;32mI (178047) RX_TASK: Humadity: 52%[0m
+[0;32mI (178047) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:18:13Z","entry_id":132,"field1":"24","field2":"52","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (178247) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (178257) example: 10... [0m
+[0;32mI (179077) RX_TASK: Humadity: 52%[0m
+[0;32mI (179077) RX_TASK: Temperature: 24°C[0m
+[0;32mI (179267) example: 9... [0m
+[0;32mI (180097) RX_TASK: Humadity: 52%[0m
+[0;32mI (180097) RX_TASK: Temperature: 24°C[0m
+[0;32mI (180267) example: 8... [0m
+[0;32mI (181127) RX_TASK: Humadity: 52%[0m
+[0;32mI (181127) RX_TASK: Temperature: 24°C[0m
+[0;32mI (181267) example: 7... [0m
+[0;32mI (182147) RX_TASK: Humadity: 52%[0m
+[0;32mI (182147) RX_TASK: Temperature: 24°C[0m
+[0;32mI (182267) example: 6... [0m
+[0;32mI (183177) RX_TASK: Humadity: 52%[0m
+[0;32mI (183177) RX_TASK: Temperature: 24°C[0m
+[0;32mI (183267) example: 5... [0m
+[0;32mI (184197) RX_TASK: Humadity: 52%[0m
+[0;32mI (184197) RX_TASK: Temperature: 24°C[0m
+[0;32mI (184267) example: 4... [0m
+[0;32mI (185227) RX_TASK: Humadity: 52%[0m
+[0;32mI (185227) RX_TASK: Temperature: 24°C[0m
+[0;32mI (185267) example: 3... [0m
+[0;32mI (186247) RX_TASK: Humadity: 52%[0m
+[0;32mI (186247) RX_TASK: Temperature: 24°C[0m
+[0;32mI (186267) example: 2... [0m
+[0;32mI (187267) example: 1... [0m
+[0;32mI (187277) RX_TASK: Humadity: 52%[0m
+[0;32mI (187277) RX_TASK: Temperature: 24°C[0m
+[0;32mI (188267) example: 0... [0m
+[0;32mI (188297) RX_TASK: Humadity: 52%[0m
+[0;32mI (188297) RX_TASK: Temperature: 24°C[0m
+[0;32mI (189267) example: Starting again![0m
+[0;32mI (189267) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (189267) example: ... allocated socket[0m
+[0;32mI (189327) RX_TASK: Humadity: 52%[0m
+[0;32mI (189327) RX_TASK: Temperature: 24°C[0m
+[0;32mI (189637) example: ... connected[0m
+[0;32mI (189637) example: ... socket send success[0m
+[0;32mI (189637) example: ... set socket receiving timeout success[0m
+0[0;32mI (190227) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (190227) example: 10... [0m
+[0;32mI (190347) RX_TASK: Humadity: 52%[0m
+[0;32mI (190347) RX_TASK: Temperature: 24°C[0m
+[0;32mI (191227) example: 9... [0m
+[0;32mI (191377) RX_TASK: Humadity: 52%[0m
+[0;32mI (191377) RX_TASK: Temperature: 24°C[0m
+[0;32mI (192227) example: 8... [0m
+[0;32mI (192397) RX_TASK: Humadity: 52%[0m
+[0;32mI (192397) RX_TASK: Temperature: 24°C[0m
+[0;32mI (193227) example: 7... [0m
+[0;32mI (193427) RX_TASK: Humadity: 52%[0m
+[0;32mI (193427) RX_TASK: Temperature: 24°C[0m
+[0;32mI (194227) example: 6... [0m
+[0;32mI (194447) RX_TASK: Humadity: 51%[0m
+[0;32mI (194447) RX_TASK: Temperature: 24°C[0m
+[0;32mI (195227) example: 5... [0m
+[0;32mI (195467) RX_TASK: Humadity: 51%[0m
+[0;32mI (195467) RX_TASK: Temperature: 24°C[0m
+[0;32mI (196227) example: 4... [0m
+[0;32mI (196497) RX_TASK: Humadity: 52%[0m
+[0;32mI (196497) RX_TASK: Temperature: 24°C[0m
+[0;32mI (197227) example: 3... [0m
+[0;32mI (197517) RX_TASK: Humadity: 51%[0m
+[0;32mI (197517) RX_TASK: Temperature: 24°C[0m
+[0;32mI (198227) example: 2... [0m
+[0;32mI (198547) RX_TASK: Humadity: 51%[0m
+[0;32mI (198547) RX_TASK: Temperature: 24°C[0m
+[0;32mI (199227) example: 1... [0m
+[0;32mI (199567) RX_TASK: Humadity: 51%[0m
+[0;32mI (199567) RX_TASK: Temperature: 24°C[0m
+[0;32mI (200227) example: 0... [0m
+[0;32mI (200597) RX_TASK: Humadity: 51%[0m
+[0;32mI (200597) RX_TASK: Temperature: 24°C[0m
+[0;32mI (201227) example: Starting again![0m
+[0;32mI (201227) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (201227) example: ... allocated socket[0m
+[0;32mI (201617) RX_TASK: Humadity: 51%[0m
+[0;32mI (201617) RX_TASK: Temperature: 24°C[0m
+[0;32mI (201687) example: ... connected[0m
+[0;32mI (201687) example: ... socket send success[0m
+[0;32mI (201687) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:18:37Z","entry_id":133,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (202017) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (202037) example: 10... [0m
+[0;32mI (202647) RX_TASK: Humadity: 51%[0m
+[0;32mI (202647) RX_TASK: Temperature: 24°C[0m
+[0;32mI (203037) example: 9... [0m
+[0;32mI (203667) RX_TASK: Humadity: 51%[0m
+[0;32mI (203667) RX_TASK: Temperature: 24°C[0m
+[0;32mI (204037) example: 8... [0m
+[0;32mI (204697) RX_TASK: Humadity: 51%[0m
+[0;32mI (204697) RX_TASK: Temperature: 24°C[0m
+[0;32mI (205037) example: 7... [0m
+[0;32mI (205717) RX_TASK: Humadity: 51%[0m
+[0;32mI (205717) RX_TASK: Temperature: 24°C[0m
+[0;32mI (206037) example: 6... [0m
+[0;32mI (206747) RX_TASK: Humadity: 51%[0m
+[0;32mI (206747) RX_TASK: Temperature: 24°C[0m
+[0;32mI (207037) example: 5... [0m
+[0;32mI (207767) RX_TASK: Humadity: 51%[0m
+[0;32mI (207767) RX_TASK: Temperature: 24°C[0m
+[0;32mI (208037) example: 4... [0m
+[0;32mI (208797) RX_TASK: Humadity: 51%[0m
+[0;32mI (208797) RX_TASK: Temperature: 24°C[0m
+[0;32mI (209037) example: 3... [0m
+[0;32mI (209817) RX_TASK: Humadity: 51%[0m
+[0;32mI (209817) RX_TASK: Temperature: 24°C[0m
+[0;32mI (210037) example: 2... [0m
+[0;32mI (210847) RX_TASK: Humadity: 51%[0m
+[0;32mI (210847) RX_TASK: Temperature: 24°C[0m
+[0;32mI (211037) example: 1... [0m
+[0;32mI (211867) RX_TASK: Humadity: 51%[0m
+[0;32mI (211867) RX_TASK: Temperature: 24°C[0m
+[0;32mI (212037) example: 0... [0m
+[0;32mI (212897) RX_TASK: Humadity: 51%[0m
+[0;32mI (212897) RX_TASK: Temperature: 24°C[0m
+[0;32mI (213037) example: Starting again![0m
+[0;32mI (213037) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (213037) example: ... allocated socket[0m
+[0;32mI (213667) example: ... connected[0m
+[0;32mI (213677) example: ... socket send success[0m
+[0;32mI (213677) example: ... set socket receiving timeout success[0m
+[0;32mI (213917) RX_TASK: Humadity: 51%[0m
+[0;32mI (213917) RX_TASK: Temperature: 24°C[0m
+[0;32mI (214947) RX_TASK: Humadity: 51%[0m
+[0;32mI (214947) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (215537) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (215537) example: 10... [0m
+[0;32mI (215967) RX_TASK: Humadity: 51%[0m
+[0;32mI (215967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (216537) example: 9... [0m
+[0;32mI (216997) RX_TASK: Humadity: 51%[0m
+[0;32mI (216997) RX_TASK: Temperature: 24°C[0m
+[0;32mI (217537) example: 8... [0m
+[0;32mI (218017) RX_TASK: Humadity: 51%[0m
+[0;32mI (218017) RX_TASK: Temperature: 24°C[0m
+[0;32mI (218537) example: 7... [0m
+[0;32mI (219047) RX_TASK: Humadity: 51%[0m
+[0;32mI (219047) RX_TASK: Temperature: 24°C[0m
+[0;32mI (219537) example: 6... [0m
+[0;32mI (220067) RX_TASK: Humadity: 51%[0m
+[0;32mI (220067) RX_TASK: Temperature: 24°C[0m
+[0;32mI (220537) example: 5... [0m
+[0;32mI (221097) RX_TASK: Humadity: 51%[0m
+[0;32mI (221097) RX_TASK: Temperature: 24°C[0m
+[0;32mI (221537) example: 4... [0m
+[0;32mI (222117) RX_TASK: Humadity: 51%[0m
+[0;32mI (222117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (222537) example: 3... [0m
+[0;32mI (223147) RX_TASK: Humadity: 51%[0m
+[0;32mI (223147) RX_TASK: Temperature: 24°C[0m
+[0;32mI (223537) example: 2... [0m
+[0;32mI (224167) RX_TASK: Humadity: 51%[0m
+[0;32mI (224167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (224537) example: 1... [0m
+[0;32mI (225197) RX_TASK: Humadity: 51%[0m
+[0;32mI (225197) RX_TASK: Temperature: 24°C[0m
+[0;32mI (225537) example: 0... [0m
+[0;32mI (226217) RX_TASK: Humadity: 51%[0m
+[0;32mI (226217) RX_TASK: Temperature: 24°C[0m
+[0;32mI (226537) example: Starting again![0m
+[0;32mI (226537) example: DNS lookup succeeded. IP=44.216.53.214[0m
+[0;32mI (226537) example: ... allocated socket[0m
+[0;32mI (226877) example: ... connected[0m
+[0;32mI (226877) example: ... socket send success[0m
+[0;32mI (226877) example: ... set socket receiving timeout success[0m
+[0;32mI (227247) RX_TASK: Humadity: 51%[0m
+[0;32mI (227247) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:19:03Z","entry_id":134,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (227507) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (227517) example: 10... [0m
+[0;32mI (228267) RX_TASK: Humadity: 51%[0m
+[0;32mI (228267) RX_TASK: Temperature: 24°C[0m
+[0;32mI (228527) example: 9... [0m
+[0;32mI (229297) RX_TASK: Humadity: 51%[0m
+[0;32mI (229297) RX_TASK: Temperature: 24°C[0m
+[0;32mI (229527) example: 8... [0m
+[0;32mI (230317) RX_TASK: Humadity: 51%[0m
+[0;32mI (230317) RX_TASK: Temperature: 24°C[0m
+[0;32mI (230527) example: 7... [0m
+[0;32mI (231347) RX_TASK: Humadity: 51%[0m
+[0;32mI (231347) RX_TASK: Temperature: 24°C[0m
+[0;32mI (231527) example: 6... [0m
+[0;32mI (232367) RX_TASK: Humadity: 51%[0m
+[0;32mI (232367) RX_TASK: Temperature: 24°C[0m
+[0;32mI (232527) example: 5... [0m
+[0;32mI (233397) RX_TASK: Humadity: 51%[0m
+[0;32mI (233397) RX_TASK: Temperature: 24°C[0m
+[0;32mI (233527) example: 4... [0m
+[0;32mI (234417) RX_TASK: Humadity: 51%[0m
+[0;32mI (234417) RX_TASK: Temperature: 24°C[0m
+[0;32mI (234527) example: 3... [0m
+[0;32mI (235447) RX_TASK: Humadity: 51%[0m
+[0;32mI (235447) RX_TASK: Temperature: 24°C[0m
+[0;32mI (235527) example: 2... [0m
+[0;32mI (236467) RX_TASK: Humadity: 51%[0m
+[0;32mI (236467) RX_TASK: Temperature: 24°C[0m
+[0;32mI (236527) example: 1... [0m
+[0;32mI (237497) RX_TASK: Humadity: 52%[0m
+[0;32mI (237497) RX_TASK: Temperature: 24°C[0m
+[0;32mI (237527) example: 0... [0m
+[0;32mI (238517) RX_TASK: Humadity: 52%[0m
+[0;32mI (238517) RX_TASK: Temperature: 24°C[0m
+[0;32mI (238527) example: Starting again![0m
+[0;32mI (238877) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (238877) example: ... allocated socket[0m
+[0;32mI (239507) example: ... connected[0m
+[0;32mI (239507) example: ... socket send success[0m
+[0;32mI (239507) example: ... set socket receiving timeout success[0m
+[0;32mI (239547) RX_TASK: Humadity: 52%[0m
+[0;32mI (239547) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (240097) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (240097) example: 10... [0m
+[0;32mI (240567) RX_TASK: Humadity: 52%[0m
+[0;32mI (240567) RX_TASK: Temperature: 24°C[0m
+[0;32mI (241097) example: 9... [0m
+[0;32mI (241597) RX_TASK: Humadity: 52%[0m
+[0;32mI (241597) RX_TASK: Temperature: 24°C[0m
+[0;32mI (242097) example: 8... [0m
+[0;32mI (242617) RX_TASK: Humadity: 52%[0m
+[0;32mI (242617) RX_TASK: Temperature: 24°C[0m
+[0;32mI (243097) example: 7... [0m
+[0;32mI (243647) RX_TASK: Humadity: 52%[0m
+[0;32mI (243647) RX_TASK: Temperature: 24°C[0m
+[0;32mI (244097) example: 6... [0m
+[0;32mI (244667) RX_TASK: Humadity: 52%[0m
+[0;32mI (244667) RX_TASK: Temperature: 24°C[0m
+[0;32mI (245097) example: 5... [0m
+[0;32mI (245697) RX_TASK: Humadity: 52%[0m
+[0;32mI (245697) RX_TASK: Temperature: 24°C[0m
+[0;32mI (246097) example: 4... [0m
+[0;32mI (246717) RX_TASK: Humadity: 52%[0m
+[0;32mI (246717) RX_TASK: Temperature: 24°C[0m
+[0;32mI (247097) example: 3... [0m
+[0;32mI (247747) RX_TASK: Humadity: 52%[0m
+[0;32mI (247747) RX_TASK: Temperature: 24°C[0m
+[0;32mI (248097) example: 2... [0m
+[0;32mI (248767) RX_TASK: Humadity: 52%[0m
+[0;32mI (248767) RX_TASK: Temperature: 24°C[0m
+[0;32mI (249097) example: 1... [0m
+[0;32mI (249797) RX_TASK: Humadity: 52%[0m
+[0;32mI (249797) RX_TASK: Temperature: 24°C[0m
+[0;32mI (250097) example: 0... [0m
+[0;32mI (250817) RX_TASK: Humadity: 52%[0m
+[0;32mI (250817) RX_TASK: Temperature: 24°C[0m
+[0;32mI (251097) example: Starting again![0m
+[0;32mI (251097) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (251097) example: ... allocated socket[0m
+[0;32mI (251457) example: ... connected[0m
+[0;32mI (251467) example: ... socket send success[0m
+[0;32mI (251467) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:19:27Z","entry_id":135,"field1":"24","field2":"52","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (251787) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (251807) example: 10... [0m
+[0;32mI (251847) RX_TASK: Humadity: 52%[0m
+[0;32mI (251847) RX_TASK: Temperature: 24°C[0m
+[0;32mI (252807) example: 9... [0m
+[0;32mI (252867) RX_TASK: Humadity: 52%[0m
+[0;32mI (252867) RX_TASK: Temperature: 24°C[0m
+[0;32mI (253807) example: 8... [0m
+[0;32mI (253897) RX_TASK: Humadity: 52%[0m
+[0;32mI (253897) RX_TASK: Temperature: 24°C[0m
+[0;32mI (254807) example: 7... [0m
+[0;32mI (254917) RX_TASK: Humadity: 52%[0m
+[0;32mI (254917) RX_TASK: Temperature: 24°C[0m
+[0;32mI (255807) example: 6... [0m
+[0;32mI (255947) RX_TASK: Humadity: 52%[0m
+[0;32mI (255947) RX_TASK: Temperature: 24°C[0m
+[0;32mI (256807) example: 5... [0m
+[0;32mI (256967) RX_TASK: Humadity: 52%[0m
+[0;32mI (256967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (257807) example: 4... [0m
+[0;32mI (257997) RX_TASK: Humadity: 52%[0m
+[0;32mI (257997) RX_TASK: Temperature: 24°C[0m
+[0;32mI (258807) example: 3... [0m
+[0;32mI (259017) RX_TASK: Humadity: 52%[0m
+[0;32mI (259017) RX_TASK: Temperature: 24°C[0m
+[0;32mI (259807) example: 2... [0m
+[0;32mI (260047) RX_TASK: Humadity: 52%[0m
+[0;32mI (260047) RX_TASK: Temperature: 24°C[0m
+[0;32mI (260807) example: 1... [0m
+[0;32mI (261067) RX_TASK: Humadity: 52%[0m
+[0;32mI (261067) RX_TASK: Temperature: 24°C[0m
+[0;32mI (261807) example: 0... [0m
+[0;32mI (262097) RX_TASK: Humadity: 52%[0m
+[0;32mI (262097) RX_TASK: Temperature: 24°C[0m
+[0;32mI (262807) example: Starting again![0m
+[0;32mI (262807) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (262807) example: ... allocated socket[0m
+[0;32mI (263117) RX_TASK: Humadity: 51%[0m
+[0;32mI (263117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (263137) example: ... connected[0m
+[0;32mI (263137) example: ... socket send success[0m
+[0;32mI (263137) example: ... set socket receiving timeout success[0m
+0[0;32mI (263747) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (263747) example: 10... [0m
+[0;32mI (264147) RX_TASK: Humadity: 51%[0m
+[0;32mI (264147) RX_TASK: Temperature: 24°C[0m
+[0;32mI (264747) example: 9... [0m
+[0;32mI (265167) RX_TASK: Humadity: 51%[0m
+[0;32mI (265167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (265747) example: 8... [0m
+[0;32mI (266197) RX_TASK: Humadity: 51%[0m
+[0;32mI (266197) RX_TASK: Temperature: 24°C[0m
+[0;32mI (266747) example: 7... [0m
+[0;32mI (267217) RX_TASK: Humadity: 51%[0m
+[0;32mI (267217) RX_TASK: Temperature: 24°C[0m
+[0;32mI (267747) example: 6... [0m
+[0;32mI (268247) RX_TASK: Humadity: 51%[0m
+[0;32mI (268247) RX_TASK: Temperature: 24°C[0m
+[0;32mI (268747) example: 5... [0m
+[0;32mI (269267) RX_TASK: Humadity: 51%[0m
+[0;32mI (269267) RX_TASK: Temperature: 24°C[0m
+[0;32mI (269747) example: 4... [0m
+[0;32mI (270297) RX_TASK: Humadity: 51%[0m
+[0;32mI (270297) RX_TASK: Temperature: 24°C[0m
+[0;32mI (270747) example: 3... [0m
+[0;32mI (271317) RX_TASK: Humadity: 51%[0m
+[0;32mI (271317) RX_TASK: Temperature: 24°C[0m
+[0;32mI (271747) example: 2... [0m
+[0;32mI (272347) RX_TASK: Humadity: 51%[0m
+[0;32mI (272347) RX_TASK: Temperature: 24°C[0m
+[0;32mI (272747) example: 1... [0m
+[0;32mI (273367) RX_TASK: Humadity: 51%[0m
+[0;32mI (273367) RX_TASK: Temperature: 24°C[0m
+[0;32mI (273747) example: 0... [0m
+[0;32mI (274397) RX_TASK: Humadity: 51%[0m
+[0;32mI (274397) RX_TASK: Temperature: 24°C[0m
+[0;32mI (274747) example: Starting again![0m
+[0;32mI (274747) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (274747) example: ... allocated socket[0m
+[0;32mI (275127) example: ... connected[0m
+[0;32mI (275137) example: ... socket send success[0m
+[0;32mI (275137) example: ... set socket receiving timeout success[0m
+[0;32mI (275417) RX_TASK: Humadity: 51%[0m
+[0;32mI (275417) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:19:51Z","entry_id":136,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (275737) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (275757) example: 10... [0m
+[0;32mI (276447) RX_TASK: Humadity: 51%[0m
+[0;32mI (276447) RX_TASK: Temperature: 24°C[0m
+[0;32mI (276757) example: 9... [0m
+[0;32mI (277467) RX_TASK: Humadity: 51%[0m
+[0;32mI (277467) RX_TASK: Temperature: 24°C[0m
+[0;32mI (277757) example: 8... [0m
+[0;32mI (278497) RX_TASK: Humadity: 51%[0m
+[0;32mI (278497) RX_TASK: Temperature: 24°C[0m
+[0;32mI (278757) example: 7... [0m
+[0;32mI (279517) RX_TASK: Humadity: 51%[0m
+[0;32mI (279517) RX_TASK: Temperature: 24°C[0m
+[0;32mI (279757) example: 6... [0m
+[0;32mI (280547) RX_TASK: Humadity: 51%[0m
+[0;32mI (280547) RX_TASK: Temperature: 24°C[0m
+[0;32mI (280757) example: 5... [0m
+[0;32mI (281567) RX_TASK: Humadity: 51%[0m
+[0;32mI (281567) RX_TASK: Temperature: 24°C[0m
+[0;32mI (281757) example: 4... [0m
+[0;32mI (282597) RX_TASK: Humadity: 51%[0m
+[0;32mI (282597) RX_TASK: Temperature: 24°C[0m
+[0;32mI (282757) example: 3... [0m
+[0;32mI (283617) RX_TASK: Humadity: 51%[0m
+[0;32mI (283617) RX_TASK: Temperature: 24°C[0m
+[0;32mI (283757) example: 2... [0m
+[0;32mI (284647) RX_TASK: Humadity: 51%[0m
+[0;32mI (284647) RX_TASK: Temperature: 24°C[0m
+[0;32mI (284757) example: 1... [0m
+[0;32mI (285667) RX_TASK: Humadity: 51%[0m
+[0;32mI (285667) RX_TASK: Temperature: 24°C[0m
+[0;32mI (285757) example: 0... [0m
+[0;32mI (286697) RX_TASK: Humadity: 51%[0m
+[0;32mI (286697) RX_TASK: Temperature: 24°C[0m
+[0;32mI (286757) example: Starting again![0m
+[0;32mI (286757) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (286757) example: ... allocated socket[0m
+[0;32mI (287197) example: ... connected[0m
+[0;32mI (287197) example: ... socket send success[0m
+[0;32mI (287197) example: ... set socket receiving timeout success[0m
+0[0;32mI (287707) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (287707) example: 10... [0m
+[0;32mI (287717) RX_TASK: Humadity: 51%[0m
+[0;32mI (287717) RX_TASK: Temperature: 24°C[0m
+[0;32mI (288707) example: 9... [0m
+[0;32mI (288747) RX_TASK: Humadity: 51%[0m
+[0;32mI (288747) RX_TASK: Temperature: 24°C[0m
+[0;32mI (289707) example: 8... [0m
+[0;32mI (289767) RX_TASK: Humadity: 51%[0m
+[0;32mI (289767) RX_TASK: Temperature: 24°C[0m
+[0;32mI (290707) example: 7... [0m
+[0;32mI (290797) RX_TASK: Humadity: 51%[0m
+[0;32mI (290797) RX_TASK: Temperature: 24°C[0m
+[0;32mI (291707) example: 6... [0m
+[0;32mI (291817) RX_TASK: Humadity: 51%[0m
+[0;32mI (291817) RX_TASK: Temperature: 24°C[0m
+[0;32mI (292707) example: 5... [0m
+[0;32mI (292847) RX_TASK: Humadity: 51%[0m
+[0;32mI (292847) RX_TASK: Temperature: 24°C[0m
+[0;32mI (293707) example: 4... [0m
+[0;32mI (293867) RX_TASK: Humadity: 51%[0m
+[0;32mI (293867) RX_TASK: Temperature: 24°C[0m
+[0;32mI (294707) example: 3... [0m
+[0;32mI (294897) RX_TASK: Humadity: 51%[0m
+[0;32mI (294897) RX_TASK: Temperature: 24°C[0m
+[0;32mI (295707) example: 2... [0m
+[0;32mI (295917) RX_TASK: Humadity: 51%[0m
+[0;32mI (295917) RX_TASK: Temperature: 24°C[0m
+[0;32mI (296707) example: 1... [0m
+[0;32mI (296947) RX_TASK: Humadity: 51%[0m
+[0;32mI (296947) RX_TASK: Temperature: 24°C[0m
+[0;32mI (297707) example: 0... [0m
+[0;32mI (297967) RX_TASK: Humadity: 51%[0m
+[0;32mI (297967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (298707) example: Starting again![0m
+[0;32mI (298707) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (298707) example: ... allocated socket[0m
+[0;32mI (298997) RX_TASK: Humadity: 51%[0m
+[0;32mI (298997) RX_TASK: Temperature: 24°C[0m
+[0;32mI (299077) example: ... connected[0m
+[0;32mI (299077) example: ... socket send success[0m
+[0;32mI (299077) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:20:15Z","entry_id":137,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (299697) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (299717) example: 10... [0m
+[0;32mI (300017) RX_TASK: Humadity: 51%[0m
+[0;32mI (300017) RX_TASK: Temperature: 24°C[0m
+[0;32mI (300717) example: 9... [0m
+[0;32mI (301047) RX_TASK: Humadity: 51%[0m
+[0;32mI (301047) RX_TASK: Temperature: 24°C[0m
+[0;32mI (301717) example: 8... [0m
+[0;32mI (302067) RX_TASK: Humadity: 51%[0m
+[0;32mI (302067) RX_TASK: Temperature: 24°C[0m
+[0;32mI (302717) example: 7... [0m
+[0;32mI (303097) RX_TASK: Humadity: 51%[0m
+[0;32mI (303097) RX_TASK: Temperature: 24°C[0m
+[0;32mI (303717) example: 6... [0m
+[0;32mI (304117) RX_TASK: Humadity: 51%[0m
+[0;32mI (304117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (304717) example: 5... [0m
+[0;32mI (305147) RX_TASK: Humadity: 51%[0m
+[0;32mI (305147) RX_TASK: Temperature: 24°C[0m
+[0;32mI (305717) example: 4... [0m
+[0;32mI (306167) RX_TASK: Humadity: 51%[0m
+[0;32mI (306167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (306717) example: 3... [0m
+[0;32mI (307197) RX_TASK: Humadity: 51%[0m
+[0;32mI (307197) RX_TASK: Temperature: 24°C[0m
+[0;32mI (307717) example: 2... [0m
+[0;32mI (308217) RX_TASK: Humadity: 51%[0m
+[0;32mI (308217) RX_TASK: Temperature: 24°C[0m
+[0;32mI (308717) example: 1... [0m
+[0;32mI (309247) RX_TASK: Humadity: 51%[0m
+[0;32mI (309247) RX_TASK: Temperature: 24°C[0m
+[0;32mI (309717) example: 0... [0m
+[0;32mI (310267) RX_TASK: Humadity: 51%[0m
+[0;32mI (310267) RX_TASK: Temperature: 24°C[0m
+[0;32mI (310717) example: Starting again![0m
+[0;32mI (310717) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (310717) example: ... allocated socket[0m
+[0;32mI (311057) example: ... connected[0m
+[0;32mI (311057) example: ... socket send success[0m
+[0;32mI (311057) example: ... set socket receiving timeout success[0m
+[0;32mI (311297) RX_TASK: Humadity: 51%[0m
+[0;32mI (311297) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (311667) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (311667) example: 10... [0m
+[0;32mI (312317) RX_TASK: Humadity: 51%[0m
+[0;32mI (312317) RX_TASK: Temperature: 24°C[0m
+[0;32mI (312667) example: 9... [0m
+[0;32mI (313347) RX_TASK: Humadity: 51%[0m
+[0;32mI (313347) RX_TASK: Temperature: 24°C[0m
+[0;32mI (313667) example: 8... [0m
+[0;32mI (314367) RX_TASK: Humadity: 51%[0m
+[0;32mI (314367) RX_TASK: Temperature: 24°C[0m
+[0;32mI (314667) example: 7... [0m
+[0;32mI (315397) RX_TASK: Humadity: 52%[0m
+[0;32mI (315397) RX_TASK: Temperature: 24°C[0m
+[0;32mI (315667) example: 6... [0m
+[0;32mI (316417) RX_TASK: Humadity: 52%[0m
+[0;32mI (316417) RX_TASK: Temperature: 24°C[0m
+[0;32mI (316667) example: 5... [0m
+[0;32mI (317447) RX_TASK: Humadity: 51%[0m
+[0;32mI (317447) RX_TASK: Temperature: 24°C[0m
+[0;32mI (317667) example: 4... [0m
+[0;32mI (318467) RX_TASK: Humadity: 51%[0m
+[0;32mI (318467) RX_TASK: Temperature: 24°C[0m
+[0;32mI (318667) example: 3... [0m
+[0;32mI (319497) RX_TASK: Humadity: 51%[0m
+[0;32mI (319497) RX_TASK: Temperature: 24°C[0m
+[0;32mI (319667) example: 2... [0m
+[0;32mI (320517) RX_TASK: Humadity: 52%[0m
+[0;32mI (320517) RX_TASK: Temperature: 24°C[0m
+[0;32mI (320667) example: 1... [0m
+[0;32mI (321547) RX_TASK: Humadity: 52%[0m
+[0;32mI (321547) RX_TASK: Temperature: 24°C[0m
+[0;32mI (321667) example: 0... [0m
+[0;32mI (322567) RX_TASK: Humadity: 52%[0m
+[0;32mI (322567) RX_TASK: Temperature: 24°C[0m
+[0;32mI (322667) example: Starting again![0m
+[0;32mI (323597) RX_TASK: Humadity: 52%[0m
+[0;32mI (323597) RX_TASK: Temperature: 24°C[0m
+[0;32mI (323717) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (323717) example: ... allocated socket[0m
+[0;32mI (324267) example: ... connected[0m
+[0;32mI (324267) example: ... socket send success[0m
+[0;32mI (324277) example: ... set socket receiving timeout success[0m
+[0;32mI (324617) RX_TASK: Humadity: 54%[0m
+[0;32mI (324617) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:20:40Z","entry_id":138,"field1":"24","field2":"52","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (324907) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (324927) example: 10... [0m
+[0;32mI (325647) RX_TASK: Humadity: 56%[0m
+[0;32mI (325647) RX_TASK: Temperature: 24°C[0m
+[0;32mI (325927) example: 9... [0m
+[0;32mI (326667) RX_TASK: Humadity: 58%[0m
+[0;32mI (326667) RX_TASK: Temperature: 24°C[0m
+[0;32mI (326927) example: 8... [0m
+[0;32mI (327697) RX_TASK: Humadity: 60%[0m
+[0;32mI (327697) RX_TASK: Temperature: 24°C[0m
+[0;32mI (327927) example: 7... [0m
+[0;32mI (328717) RX_TASK: Humadity: 61%[0m
+[0;32mI (328717) RX_TASK: Temperature: 24°C[0m
+[0;32mI (328927) example: 6... [0m
+[0;32mI (329747) RX_TASK: Humadity: 63%[0m
+[0;32mI (329747) RX_TASK: Temperature: 24°C[0m
+[0;32mI (329927) example: 5... [0m
+[0;32mI (330767) RX_TASK: Humadity: 64%[0m
+[0;32mI (330767) RX_TASK: Temperature: 24°C[0m
+[0;32mI (330927) example: 4... [0m
+[0;32mI (331797) RX_TASK: Humadity: 65%[0m
+[0;32mI (331797) RX_TASK: Temperature: 24°C[0m
+[0;32mI (331927) example: 3... [0m
+[0;32mI (332817) RX_TASK: Humadity: 66%[0m
+[0;32mI (332817) RX_TASK: Temperature: 24°C[0m
+[0;32mI (332927) example: 2... [0m
+[0;32mI (333847) RX_TASK: Humadity: 67%[0m
+[0;32mI (333847) RX_TASK: Temperature: 24°C[0m
+[0;32mI (333927) example: 1... [0m
+[0;32mI (334867) RX_TASK: Humadity: 67%[0m
+[0;32mI (334867) RX_TASK: Temperature: 24°C[0m
+[0;32mI (334927) example: 0... [0m
+[0;32mI (335897) RX_TASK: Humadity: 68%[0m
+[0;32mI (335897) RX_TASK: Temperature: 24°C[0m
+[0;32mI (335927) example: Starting again![0m
+[0;32mI (335927) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (335927) example: ... allocated socket[0m
+[0;32mI (336257) example: ... connected[0m
+[0;32mI (336257) example: ... socket send success[0m
+[0;32mI (336257) example: ... set socket receiving timeout success[0m
+0[0;32mI (336867) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (336867) example: 10... [0m
+[0;32mI (336917) RX_TASK: Humadity: 68%[0m
+[0;32mI (336917) RX_TASK: Temperature: 24°C[0m
+[0;32mI (337867) example: 9... [0m
+[0;32mI (337947) RX_TASK: Humadity: 68%[0m
+[0;32mI (337947) RX_TASK: Temperature: 24°C[0m
+[0;32mI (338867) example: 8... [0m
+[0;32mI (338967) RX_TASK: Humadity: 69%[0m
+[0;32mI (338967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (339867) example: 7... [0m
+[0;32mI (339997) RX_TASK: Humadity: 69%[0m
+[0;32mI (339997) RX_TASK: Temperature: 24°C[0m
+[0;32mI (340867) example: 6... [0m
+[0;32mI (341017) RX_TASK: Humadity: 69%[0m
+[0;32mI (341017) RX_TASK: Temperature: 24°C[0m
+[0;32mI (341867) example: 5... [0m
+[0;32mI (342047) RX_TASK: Humadity: 69%[0m
+[0;32mI (342047) RX_TASK: Temperature: 24°C[0m
+[0;32mI (342867) example: 4... [0m
+[0;32mI (343067) RX_TASK: Humadity: 69%[0m
+[0;32mI (343067) RX_TASK: Temperature: 24°C[0m
+[0;32mI (343867) example: 3... [0m
+[0;32mI (344097) RX_TASK: Humadity: 69%[0m
+[0;32mI (344097) RX_TASK: Temperature: 24°C[0m
+[0;32mI (344867) example: 2... [0m
+[0;32mI (345117) RX_TASK: Humadity: 70%[0m
+[0;32mI (345117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (345867) example: 1... [0m
+[0;32mI (346147) RX_TASK: Humadity: 70%[0m
+[0;32mI (346147) RX_TASK: Temperature: 24°C[0m
+[0;32mI (346867) example: 0... [0m
+[0;32mI (347167) RX_TASK: Humadity: 70%[0m
+[0;32mI (347167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (347867) example: Starting again![0m
+[0;32mI (347867) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (347867) example: ... allocated socket[0m
+[0;32mI (348197) RX_TASK: Humadity: 70%[0m
+[0;32mI (348197) RX_TASK: Temperature: 24°C[0m
+[0;32mI (348247) example: ... connected[0m
+[0;32mI (348247) example: ... socket send success[0m
+[0;32mI (348247) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:21:04Z","entry_id":139,"field1":"24","field2":"70","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (348637) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (348657) example: 10... [0m
+[0;32mI (349217) RX_TASK: Humadity: 70%[0m
+[0;32mI (349217) RX_TASK: Temperature: 24°C[0m
+[0;32mI (349657) example: 9... [0m
+[0;32mI (350247) RX_TASK: Humadity: 70%[0m
+[0;32mI (350247) RX_TASK: Temperature: 24°C[0m
+[0;32mI (350657) example: 8... [0m
+[0;32mI (351267) RX_TASK: Humadity: 70%[0m
+[0;32mI (351267) RX_TASK: Temperature: 24°C[0m
+[0;32mI (351657) example: 7... [0m
+[0;32mI (352297) RX_TASK: Humadity: 70%[0m
+[0;32mI (352297) RX_TASK: Temperature: 24°C[0m
+[0;32mI (352657) example: 6... [0m
+[0;32mI (353317) RX_TASK: Humadity: 70%[0m
+[0;32mI (353317) RX_TASK: Temperature: 25°C[0m
+[0;32mI (353657) example: 5... [0m
+[0;32mI (354347) RX_TASK: Humadity: 70%[0m
+[0;32mI (354347) RX_TASK: Temperature: 25°C[0m
+[0;32mI (354657) example: 4... [0m
+[0;32mI (355367) RX_TASK: Humadity: 70%[0m
+[0;32mI (355367) RX_TASK: Temperature: 25°C[0m
+[0;32mI (355657) example: 3... [0m
+[0;32mI (356397) RX_TASK: Humadity: 70%[0m
+[0;32mI (356397) RX_TASK: Temperature: 25°C[0m
+[0;32mI (356657) example: 2... [0m
+[0;32mI (357417) RX_TASK: Humadity: 69%[0m
+[0;32mI (357417) RX_TASK: Temperature: 25°C[0m
+[0;32mI (357657) example: 1... [0m
+[0;32mI (358447) RX_TASK: Humadity: 69%[0m
+[0;32mI (358447) RX_TASK: Temperature: 25°C[0m
+[0;32mI (358657) example: 0... [0m
+[0;32mI (359467) RX_TASK: Humadity: 67%[0m
+[0;32mI (359467) RX_TASK: Temperature: 25°C[0m
+[0;32mI (359657) example: Starting again![0m
+[0;32mI (359657) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (359657) example: ... allocated socket[0m
+[0;32mI (360007) example: ... connected[0m
+[0;32mI (360007) example: ... socket send success[0m
+[0;32mI (360007) example: ... set socket receiving timeout success[0m
+[0;32mI (360497) RX_TASK: Humadity: 66%[0m
+[0;32mI (360497) RX_TASK: Temperature: 25°C[0m
+0[0;32mI (360617) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (360617) example: 10... [0m
+[0;32mI (361517) RX_TASK: Humadity: 64%[0m
+[0;32mI (361517) RX_TASK: Temperature: 25°C[0m
+[0;32mI (361627) example: 9... [0m
+[0;32mI (362547) RX_TASK: Humadity: 63%[0m
+[0;32mI (362547) RX_TASK: Temperature: 25°C[0m
+[0;32mI (362627) example: 8... [0m
+[0;32mI (363567) RX_TASK: Humadity: 62%[0m
+[0;32mI (363567) RX_TASK: Temperature: 25°C[0m
+[0;32mI (363627) example: 7... [0m
+[0;32mI (364597) RX_TASK: Humadity: 60%[0m
+[0;32mI (364597) RX_TASK: Temperature: 25°C[0m
+[0;32mI (364627) example: 6... [0m
+[0;32mI (365617) RX_TASK: Humadity: 59%[0m
+[0;32mI (365617) RX_TASK: Temperature: 25°C[0m
+[0;32mI (365627) example: 5... [0m
+[0;32mI (366627) example: 4... [0m
+[0;32mI (366647) RX_TASK: Humadity: 59%[0m
+[0;32mI (366647) RX_TASK: Temperature: 25°C[0m
+[0;32mI (367627) example: 3... [0m
+[0;32mI (367667) RX_TASK: Humadity: 58%[0m
+[0;32mI (367667) RX_TASK: Temperature: 25°C[0m
+[0;32mI (368627) example: 2... [0m
+[0;32mI (368697) RX_TASK: Humadity: 57%[0m
+[0;32mI (368697) RX_TASK: Temperature: 25°C[0m
+[0;32mI (369627) example: 1... [0m
+[0;32mI (369717) RX_TASK: Humadity: 56%[0m
+[0;32mI (369717) RX_TASK: Temperature: 25°C[0m
+[0;32mI (370627) example: 0... [0m
+[0;32mI (370737) RX_TASK: Humadity: 56%[0m
+[0;32mI (370737) RX_TASK: Temperature: 25°C[0m
+[0;32mI (371627) example: Starting again![0m
+[0;32mI (371627) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (371627) example: ... allocated socket[0m
+[0;32mI (371767) RX_TASK: Humadity: 55%[0m
+[0;32mI (371767) RX_TASK: Temperature: 25°C[0m
+[0;32mI (372087) example: ... connected[0m
+[0;32mI (372087) example: ... socket send success[0m
+[0;32mI (372087) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:21:28Z","entry_id":140,"field1":"25","field2":"55","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (372607) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (372617) example: 10... [0m
+[0;32mI (372787) RX_TASK: Humadity: 55%[0m
+[0;32mI (372787) RX_TASK: Temperature: 25°C[0m
+[0;32mI (373627) example: 9... [0m
+[0;32mI (373817) RX_TASK: Humadity: 55%[0m
+[0;32mI (373817) RX_TASK: Temperature: 25°C[0m
+[0;32mI (374627) example: 8... [0m
+[0;32mI (374837) RX_TASK: Humadity: 54%[0m
+[0;32mI (374837) RX_TASK: Temperature: 25°C[0m
+[0;32mI (375627) example: 7... [0m
+[0;32mI (375867) RX_TASK: Humadity: 54%[0m
+[0;32mI (375867) RX_TASK: Temperature: 25°C[0m
+[0;32mI (376627) example: 6... [0m
+[0;32mI (376887) RX_TASK: Humadity: 53%[0m
+[0;32mI (376887) RX_TASK: Temperature: 25°C[0m
+[0;32mI (377627) example: 5... [0m
+[0;32mI (377917) RX_TASK: Humadity: 53%[0m
+[0;32mI (377917) RX_TASK: Temperature: 25°C[0m
+[0;32mI (378627) example: 4... [0m
+[0;32mI (378937) RX_TASK: Humadity: 53%[0m
+[0;32mI (378937) RX_TASK: Temperature: 24°C[0m
+[0;32mI (379627) example: 3... [0m
+[0;32mI (379967) RX_TASK: Humadity: 52%[0m
+[0;32mI (379967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (380627) example: 2... [0m
+[0;32mI (380987) RX_TASK: Humadity: 52%[0m
+[0;32mI (380987) RX_TASK: Temperature: 24°C[0m
+[0;32mI (381627) example: 1... [0m
+[0;32mI (382017) RX_TASK: Humadity: 52%[0m
+[0;32mI (382017) RX_TASK: Temperature: 24°C[0m
+[0;32mI (382627) example: 0... [0m
+[0;32mI (383037) RX_TASK: Humadity: 52%[0m
+[0;32mI (383037) RX_TASK: Temperature: 24°C[0m
+[0;32mI (383627) example: Starting again![0m
+[0;32mI (383627) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (383627) example: ... allocated socket[0m
+[0;32mI (383977) example: ... connected[0m
+[0;32mI (383977) example: ... socket send success[0m
+[0;32mI (383977) example: ... set socket receiving timeout success[0m
+[0;32mI (384067) RX_TASK: Humadity: 52%[0m
+[0;32mI (384067) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (384577) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (384577) example: 10... [0m
+[0;32mI (385087) RX_TASK: Humadity: 52%[0m
+[0;32mI (385087) RX_TASK: Temperature: 24°C[0m
+[0;32mI (385587) example: 9... [0m
+[0;32mI (386117) RX_TASK: Humadity: 52%[0m
+[0;32mI (386117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (386587) example: 8... [0m
+[0;32mI (387137) RX_TASK: Humadity: 51%[0m
+[0;32mI (387137) RX_TASK: Temperature: 24°C[0m
+[0;32mI (387587) example: 7... [0m
+[0;32mI (388167) RX_TASK: Humadity: 51%[0m
+[0;32mI (388167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (388587) example: 6... [0m
+[0;32mI (389187) RX_TASK: Humadity: 51%[0m
+[0;32mI (389187) RX_TASK: Temperature: 24°C[0m
+[0;32mI (389587) example: 5... [0m
+[0;32mI (390217) RX_TASK: Humadity: 51%[0m
+[0;32mI (390217) RX_TASK: Temperature: 24°C[0m
+[0;32mI (390587) example: 4... [0m
+[0;32mI (391237) RX_TASK: Humadity: 51%[0m
+[0;32mI (391237) RX_TASK: Temperature: 24°C[0m
+[0;32mI (391587) example: 3... [0m
+[0;32mI (392267) RX_TASK: Humadity: 51%[0m
+[0;32mI (392267) RX_TASK: Temperature: 24°C[0m
+[0;32mI (392587) example: 2... [0m
+[0;32mI (393287) RX_TASK: Humadity: 51%[0m
+[0;32mI (393287) RX_TASK: Temperature: 24°C[0m
+[0;32mI (393587) example: 1... [0m
+[0;32mI (394317) RX_TASK: Humadity: 51%[0m
+[0;32mI (394317) RX_TASK: Temperature: 24°C[0m
+[0;32mI (394587) example: 0... [0m
+[0;32mI (395337) RX_TASK: Humadity: 51%[0m
+[0;32mI (395337) RX_TASK: Temperature: 24°C[0m
+[0;32mI (395587) example: Starting again![0m
+[0;32mI (395587) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (395587) example: ... allocated socket[0m
+[0;32mI (395947) example: ... connected[0m
+[0;32mI (395947) example: ... socket send success[0m
+[0;32mI (395947) example: ... set socket receiving timeout success[0m
+[0;32mI (396367) RX_TASK: Humadity: 51%[0m
+[0;32mI (396367) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:21:52Z","entry_id":141,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (396567) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (396577) example: 10... [0m
+[0;32mI (397387) RX_TASK: Humadity: 51%[0m
+[0;32mI (397387) RX_TASK: Temperature: 24°C[0m
+[0;32mI (397587) example: 9... [0m
+[0;32mI (398417) RX_TASK: Humadity: 51%[0m
+[0;32mI (398417) RX_TASK: Temperature: 24°C[0m
+[0;32mI (398587) example: 8... [0m
+[0;32mI (399437) RX_TASK: Humadity: 51%[0m
+[0;32mI (399437) RX_TASK: Temperature: 24°C[0m
+[0;32mI (399587) example: 7... [0m
+[0;32mI (400467) RX_TASK: Humadity: 51%[0m
+[0;32mI (400467) RX_TASK: Temperature: 24°C[0m
+[0;32mI (400587) example: 6... [0m
+[0;32mI (401487) RX_TASK: Humadity: 51%[0m
+[0;32mI (401487) RX_TASK: Temperature: 24°C[0m
+[0;32mI (401587) example: 5... [0m
+[0;32mI (402517) RX_TASK: Humadity: 51%[0m
+[0;32mI (402517) RX_TASK: Temperature: 24°C[0m
+[0;32mI (402587) example: 4... [0m
+[0;32mI (403537) RX_TASK: Humadity: 51%[0m
+[0;32mI (403537) RX_TASK: Temperature: 24°C[0m
+[0;32mI (403587) example: 3... [0m
+[0;32mI (404567) RX_TASK: Humadity: 51%[0m
+[0;32mI (404567) RX_TASK: Temperature: 24°C[0m
+[0;32mI (404587) example: 2... [0m
+[0;32mI (405587) RX_TASK: Humadity: 51%[0m
+[0;32mI (405587) RX_TASK: Temperature: 24°C[0m
+[0;32mI (405587) example: 1... [0m
+[0;32mI (406587) example: 0... [0m
+[0;32mI (406617) RX_TASK: Humadity: 51%[0m
+[0;32mI (406617) RX_TASK: Temperature: 24°C[0m
+[0;32mI (407587) example: Starting again![0m
+[0;32mI (407637) RX_TASK: Humadity: 51%[0m
+[0;32mI (407637) RX_TASK: Temperature: 24°C[0m
+[0;32mI (407927) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (407927) example: ... allocated socket[0m
+[0;32mI (408237) example: ... connected[0m
+[0;32mI (408237) example: ... socket send success[0m
+[0;32mI (408237) example: ... set socket receiving timeout success[0m
+[0;32mI (408667) RX_TASK: Humadity: 51%[0m
+[0;32mI (408667) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (408847) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (408847) example: 10... [0m
+[0;32mI (409687) RX_TASK: Humadity: 51%[0m
+[0;32mI (409687) RX_TASK: Temperature: 24°C[0m
+[0;32mI (409857) example: 9... [0m
+[0;32mI (410717) RX_TASK: Humadity: 51%[0m
+[0;32mI (410717) RX_TASK: Temperature: 24°C[0m
+[0;32mI (410857) example: 8... [0m
+[0;32mI (411737) RX_TASK: Humadity: 51%[0m
+[0;32mI (411737) RX_TASK: Temperature: 24°C[0m
+[0;32mI (411857) example: 7... [0m
+[0;32mI (412767) RX_TASK: Humadity: 51%[0m
+[0;32mI (412767) RX_TASK: Temperature: 24°C[0m
+[0;32mI (412857) example: 6... [0m
+[0;32mI (413787) RX_TASK: Humadity: 51%[0m
+[0;32mI (413787) RX_TASK: Temperature: 24°C[0m
+[0;32mI (413857) example: 5... [0m
+[0;32mI (414817) RX_TASK: Humadity: 51%[0m
+[0;32mI (414817) RX_TASK: Temperature: 24°C[0m
+[0;32mI (414857) example: 4... [0m
+[0;32mI (415837) RX_TASK: Humadity: 51%[0m
+[0;32mI (415837) RX_TASK: Temperature: 24°C[0m
+[0;32mI (415857) example: 3... [0m
+[0;32mI (416857) example: 2... [0m
+[0;32mI (416867) RX_TASK: Humadity: 51%[0m
+[0;32mI (416867) RX_TASK: Temperature: 24°C[0m
+[0;32mI (417857) example: 1... [0m
+[0;32mI (417887) RX_TASK: Humadity: 51%[0m
+[0;32mI (417887) RX_TASK: Temperature: 24°C[0m
+[0;32mI (418857) example: 0... [0m
+[0;32mI (418917) RX_TASK: Humadity: 51%[0m
+[0;32mI (418917) RX_TASK: Temperature: 24°C[0m
+[0;32mI (419857) example: Starting again![0m
+[0;32mI (419857) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (419857) example: ... allocated socket[0m
+[0;32mI (419937) RX_TASK: Humadity: 51%[0m
+[0;32mI (419937) RX_TASK: Temperature: 24°C[0m
+[0;32mI (420317) example: ... connected[0m
+[0;32mI (420327) example: ... socket send success[0m
+[0;32mI (420327) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:22:16Z","entry_id":142,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (420837) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (420857) example: 10... [0m
+[0;32mI (420967) RX_TASK: Humadity: 51%[0m
+[0;32mI (420967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (421857) example: 9... [0m
+[0;32mI (421987) RX_TASK: Humadity: 51%[0m
+[0;32mI (421987) RX_TASK: Temperature: 24°C[0m
+[0;32mI (422857) example: 8... [0m
+[0;32mI (423017) RX_TASK: Humadity: 51%[0m
+[0;32mI (423017) RX_TASK: Temperature: 24°C[0m
+[0;32mI (423857) example: 7... [0m
+[0;32mI (424037) RX_TASK: Humadity: 51%[0m
+[0;32mI (424037) RX_TASK: Temperature: 24°C[0m
+[0;32mI (424857) example: 6... [0m
+[0;32mI (425067) RX_TASK: Humadity: 51%[0m
+[0;32mI (425067) RX_TASK: Temperature: 24°C[0m
+[0;32mI (425857) example: 5... [0m
+[0;32mI (426087) RX_TASK: Humadity: 51%[0m
+[0;32mI (426087) RX_TASK: Temperature: 24°C[0m
+[0;32mI (426857) example: 4... [0m
+[0;32mI (427117) RX_TASK: Humadity: 51%[0m
+[0;32mI (427117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (427857) example: 3... [0m
+[0;32mI (428137) RX_TASK: Humadity: 51%[0m
+[0;32mI (428137) RX_TASK: Temperature: 24°C[0m
+[0;32mI (428857) example: 2... [0m
+[0;32mI (429167) RX_TASK: Humadity: 51%[0m
+[0;32mI (429167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (429857) example: 1... [0m
+[0;32mI (430187) RX_TASK: Humadity: 51%[0m
+[0;32mI (430187) RX_TASK: Temperature: 24°C[0m
+[0;32mI (430857) example: 0... [0m
+[0;32mI (431217) RX_TASK: Humadity: 51%[0m
+[0;32mI (431217) RX_TASK: Temperature: 24°C[0m
+[0;32mI (431857) example: Starting again![0m
+[0;32mI (431857) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (431857) example: ... allocated socket[0m
+[0;32mI (432237) RX_TASK: Humadity: 51%[0m
+[0;32mI (432237) RX_TASK: Temperature: 24°C[0m
+[0;32mI (432307) example: ... connected[0m
+[0;32mI (432307) example: ... socket send success[0m
+[0;32mI (432307) example: ... set socket receiving timeout success[0m
+0[0;32mI (432807) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (432817) example: 10... [0m
+[0;32mI (433267) RX_TASK: Humadity: 51%[0m
+[0;32mI (433267) RX_TASK: Temperature: 24°C[0m
+[0;32mI (433817) example: 9... [0m
+[0;32mI (434287) RX_TASK: Humadity: 51%[0m
+[0;32mI (434287) RX_TASK: Temperature: 24°C[0m
+[0;32mI (434817) example: 8... [0m
+[0;32mI (435317) RX_TASK: Humadity: 51%[0m
+[0;32mI (435317) RX_TASK: Temperature: 24°C[0m
+[0;32mI (435817) example: 7... [0m
+[0;32mI (436337) RX_TASK: Humadity: 51%[0m
+[0;32mI (436337) RX_TASK: Temperature: 24°C[0m
+[0;32mI (436817) example: 6... [0m
+[0;32mI (437367) RX_TASK: Humadity: 51%[0m
+[0;32mI (437367) RX_TASK: Temperature: 24°C[0m
+[0;32mI (437817) example: 5... [0m
+[0;32mI (438387) RX_TASK: Humadity: 51%[0m
+[0;32mI (438387) RX_TASK: Temperature: 24°C[0m
+[0;32mI (438817) example: 4... [0m
+[0;32mI (439417) RX_TASK: Humadity: 51%[0m
+[0;32mI (439417) RX_TASK: Temperature: 24°C[0m
+[0;32mI (439817) example: 3... [0m
+[0;32mI (440437) RX_TASK: Humadity: 51%[0m
+[0;32mI (440437) RX_TASK: Temperature: 24°C[0m
+[0;32mI (440817) example: 2... [0m
+[0;32mI (441467) RX_TASK: Humadity: 51%[0m
+[0;32mI (441467) RX_TASK: Temperature: 24°C[0m
+[0;32mI (441817) example: 1... [0m
+[0;32mI (442487) RX_TASK: Humadity: 51%[0m
+[0;32mI (442487) RX_TASK: Temperature: 24°C[0m
+[0;32mI (442817) example: 0... [0m
+[0;32mI (443517) RX_TASK: Humadity: 51%[0m
+[0;32mI (443517) RX_TASK: Temperature: 24°C[0m
+[0;32mI (443817) example: Starting again![0m
+[0;32mI (443817) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (443817) example: ... allocated socket[0m
+[0;32mI (444277) example: ... connected[0m
+[0;32mI (444277) example: ... socket send success[0m
+[0;32mI (444277) example: ... set socket receiving timeout success[0m
+[0;32mI (444537) RX_TASK: Humadity: 51%[0m
+[0;32mI (444537) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:22:40Z","entry_id":143,"field1":"24","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (444897) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (444917) example: 10... [0m
+[0;32mI (445567) RX_TASK: Humadity: 51%[0m
+[0;32mI (445567) RX_TASK: Temperature: 24°C[0m
+[0;32mI (445917) example: 9... [0m
+[0;32mI (446587) RX_TASK: Humadity: 51%[0m
+[0;32mI (446587) RX_TASK: Temperature: 24°C[0m
+[0;32mI (446917) example: 8... [0m
+[0;32mI (447617) RX_TASK: Humadity: 51%[0m
+[0;32mI (447617) RX_TASK: Temperature: 24°C[0m
+[0;32mI (447917) example: 7... [0m
+[0;32mI (448637) RX_TASK: Humadity: 51%[0m
+[0;32mI (448637) RX_TASK: Temperature: 24°C[0m
+[0;32mI (448917) example: 6... [0m
+[0;32mI (449667) RX_TASK: Humadity: 51%[0m
+[0;32mI (449667) RX_TASK: Temperature: 24°C[0m
+[0;32mI (449917) example: 5... [0m
+[0;32mI (450687) RX_TASK: Humadity: 51%[0m
+[0;32mI (450687) RX_TASK: Temperature: 24°C[0m
+[0;32mI (450917) example: 4... [0m
+[0;32mI (451717) RX_TASK: Humadity: 51%[0m
+[0;32mI (451717) RX_TASK: Temperature: 24°C[0m
+[0;32mI (451917) example: 3... [0m
+[0;32mI (452737) RX_TASK: Humadity: 51%[0m
+[0;32mI (452737) RX_TASK: Temperature: 24°C[0m
+[0;32mI (452917) example: 2... [0m
+[0;32mI (453767) RX_TASK: Humadity: 51%[0m
+[0;32mI (453767) RX_TASK: Temperature: 24°C[0m
+[0;32mI (453917) example: 1... [0m
+[0;32mI (454787) RX_TASK: Humadity: 51%[0m
+[0;32mI (454787) RX_TASK: Temperature: 24°C[0m
+[0;32mI (454917) example: 0... [0m
+[0;32mI (455817) RX_TASK: Humadity: 51%[0m
+[0;32mI (455817) RX_TASK: Temperature: 24°C[0m
+[0;32mI (455917) example: Starting again![0m
+[0;32mI (455917) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (455917) example: ... allocated socket[0m
+[0;32mI (456567) example: ... connected[0m
+[0;32mI (456567) example: ... socket send success[0m
+[0;32mI (456577) example: ... set socket receiving timeout success[0m
+[0;32mI (456837) RX_TASK: Humadity: 51%[0m
+[0;32mI (456837) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (457187) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (457187) example: 10... [0m
+[0;32mI (457867) RX_TASK: Humadity: 51%[0m
+[0;32mI (457867) RX_TASK: Temperature: 24°C[0m
+[0;32mI (458187) example: 9... [0m
+[0;32mI (458887) RX_TASK: Humadity: 51%[0m
+[0;32mI (458887) RX_TASK: Temperature: 24°C[0m
+[0;32mI (459187) example: 8... [0m
+[0;32mI (459917) RX_TASK: Humadity: 52%[0m
+[0;32mI (459917) RX_TASK: Temperature: 24°C[0m
+[0;32mI (460187) example: 7... [0m
+[0;32mI (460937) RX_TASK: Humadity: 51%[0m
+[0;32mI (460937) RX_TASK: Temperature: 24°C[0m
+[0;32mI (461187) example: 6... [0m
+[0;32mI (461967) RX_TASK: Humadity: 51%[0m
+[0;32mI (461967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (462187) example: 5... [0m
+[0;32mI (462987) RX_TASK: Humadity: 51%[0m
+[0;32mI (462987) RX_TASK: Temperature: 24°C[0m
+[0;32mI (463187) example: 4... [0m
+[0;32mI (464017) RX_TASK: Humadity: 51%[0m
+[0;32mI (464017) RX_TASK: Temperature: 24°C[0m
+[0;32mI (464187) example: 3... [0m
+[0;32mI (465037) RX_TASK: Humadity: 51%[0m
+[0;32mI (465037) RX_TASK: Temperature: 24°C[0m
+[0;32mI (465187) example: 2... [0m
+[0;32mI (466067) RX_TASK: Humadity: 52%[0m
+[0;32mI (466067) RX_TASK: Temperature: 24°C[0m
+[0;32mI (466187) example: 1... [0m
+[0;32mI (467087) RX_TASK: Humadity: 52%[0m
+[0;32mI (467087) RX_TASK: Temperature: 24°C[0m
+[0;32mI (467187) example: 0... [0m
+[0;32mI (468117) RX_TASK: Humadity: 52%[0m
+[0;32mI (468117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (468187) example: Starting again![0m
+[0;32mI (468187) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (468187) example: ... allocated socket[0m
+[0;32mI (468547) example: ... connected[0m
+[0;32mI (468547) example: ... socket send success[0m
+[0;32mI (468547) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:23:04Z","entry_id":144,"field1":"24","field2":"52","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (468967) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (468987) example: 10... [0m
+[0;32mI (469137) RX_TASK: Humadity: 52%[0m
+[0;32mI (469137) RX_TASK: Temperature: 24°C[0m
+[0;32mI (469987) example: 9... [0m
+[0;32mI (470167) RX_TASK: Humadity: 52%[0m
+[0;32mI (470167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (470987) example: 8... [0m
+[0;32mI (471187) RX_TASK: Humadity: 52%[0m
+[0;32mI (471187) RX_TASK: Temperature: 24°C[0m
+[0;32mI (471987) example: 7... [0m
+[0;32mI (472217) RX_TASK: Humadity: 51%[0m
+[0;32mI (472217) RX_TASK: Temperature: 24°C[0m
+[0;32mI (472987) example: 6... [0m
+[0;32mI (473237) RX_TASK: Humadity: 51%[0m
+[0;32mI (473237) RX_TASK: Temperature: 24°C[0m
+[0;32mI (473987) example: 5... [0m
+[0;32mI (474267) RX_TASK: Humadity: 51%[0m
+[0;32mI (474267) RX_TASK: Temperature: 24°C[0m
+[0;32mI (474987) example: 4... [0m
+[0;32mI (475287) RX_TASK: Humadity: 51%[0m
+[0;32mI (475287) RX_TASK: Temperature: 24°C[0m
+[0;32mI (475987) example: 3... [0m
+[0;32mI (476317) RX_TASK: Humadity: 51%[0m
+[0;32mI (476317) RX_TASK: Temperature: 24°C[0m
+[0;32mI (476987) example: 2... [0m
+[0;32mI (477337) RX_TASK: Humadity: 51%[0m
+[0;32mI (477337) RX_TASK: Temperature: 24°C[0m
+[0;32mI (477987) example: 1... [0m
+[0;32mI (478367) RX_TASK: Humadity: 51%[0m
+[0;32mI (478367) RX_TASK: Temperature: 24°C[0m
+[0;32mI (478987) example: 0... [0m
+[0;32mI (479387) RX_TASK: Humadity: 52%[0m
+[0;32mI (479387) RX_TASK: Temperature: 24°C[0m
+[0;32mI (479987) example: Starting again![0m
+[0;32mI (479987) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (479987) example: ... allocated socket[0m
+[0;32mI (480417) RX_TASK: Humadity: 51%[0m
+[0;32mI (480417) RX_TASK: Temperature: 24°C[0m
+[0;32mI (480537) example: ... connected[0m
+[0;32mI (480537) example: ... socket send success[0m
+[0;32mI (480537) example: ... set socket receiving timeout success[0m
+0[0;32mI (480877) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (480887) example: 10... [0m
+[0;32mI (481437) RX_TASK: Humadity: 51%[0m
+[0;32mI (481437) RX_TASK: Temperature: 24°C[0m
+[0;32mI (481887) example: 9... [0m
+[0;32mI (482467) RX_TASK: Humadity: 51%[0m
+[0;32mI (482467) RX_TASK: Temperature: 24°C[0m
+[0;32mI (482887) example: 8... [0m
+[0;32mI (483487) RX_TASK: Humadity: 51%[0m
+[0;32mI (483487) RX_TASK: Temperature: 24°C[0m
+[0;32mI (483887) example: 7... [0m
+[0;32mI (484517) RX_TASK: Humadity: 51%[0m
+[0;32mI (484517) RX_TASK: Temperature: 24°C[0m
+[0;32mI (484887) example: 6... [0m
+[0;32mI (485537) RX_TASK: Humadity: 51%[0m
+[0;32mI (485537) RX_TASK: Temperature: 24°C[0m
+[0;32mI (485887) example: 5... [0m
+[0;32mI (486567) RX_TASK: Humadity: 51%[0m
+[0;32mI (486567) RX_TASK: Temperature: 24°C[0m
+[0;32mI (486887) example: 4... [0m
+[0;32mI (487587) RX_TASK: Humadity: 51%[0m
+[0;32mI (487587) RX_TASK: Temperature: 24°C[0m
+[0;32mI (487887) example: 3... [0m
+[0;32mI (488617) RX_TASK: Humadity: 51%[0m
+[0;32mI (488617) RX_TASK: Temperature: 24°C[0m
+[0;32mI (488887) example: 2... [0m
+[0;32mI (489637) RX_TASK: Humadity: 52%[0m
+[0;32mI (489637) RX_TASK: Temperature: 24°C[0m
+[0;32mI (489887) example: 1... [0m
+[0;32mI (490667) RX_TASK: Humadity: 52%[0m
+[0;32mI (490667) RX_TASK: Temperature: 24°C[0m
+[0;32mI (490887) example: 0... [0m
+[0;32mI (491687) RX_TASK: Humadity: 52%[0m
+[0;32mI (491687) RX_TASK: Temperature: 24°C[0m
+[0;32mI (491887) example: Starting again![0m
+[0;32mI (492007) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (492007) example: ... allocated socket[0m
+[0;32mI (492617) example: ... connected[0m
+[0;32mI (492617) example: ... socket send success[0m
+[0;32mI (492617) example: ... set socket receiving timeout success[0m
+[0;32mI (492717) RX_TASK: Humadity: 52%[0m
+[0;32mI (492717) RX_TASK: Temperature: 24°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:23:28Z","entry_id":145,"field1":"24","field2":"52","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (493237) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (493257) example: 10... [0m
+[0;32mI (493737) RX_TASK: Humadity: 52%[0m
+[0;32mI (493737) RX_TASK: Temperature: 24°C[0m
+[0;32mI (494257) example: 9... [0m
+[0;32mI (494767) RX_TASK: Humadity: 52%[0m
+[0;32mI (494767) RX_TASK: Temperature: 24°C[0m
+[0;32mI (495257) example: 8... [0m
+[0;32mI (495787) RX_TASK: Humadity: 52%[0m
+[0;32mI (495787) RX_TASK: Temperature: 24°C[0m
+[0;32mI (496257) example: 7... [0m
+[0;32mI (496817) RX_TASK: Humadity: 52%[0m
+[0;32mI (496817) RX_TASK: Temperature: 24°C[0m
+[0;32mI (497257) example: 6... [0m
+[0;32mI (497837) RX_TASK: Humadity: 53%[0m
+[0;32mI (497837) RX_TASK: Temperature: 24°C[0m
+[0;32mI (498257) example: 5... [0m
+[0;32mI (498867) RX_TASK: Humadity: 53%[0m
+[0;32mI (498867) RX_TASK: Temperature: 24°C[0m
+[0;32mI (499257) example: 4... [0m
+[0;32mI (499887) RX_TASK: Humadity: 53%[0m
+[0;32mI (499887) RX_TASK: Temperature: 24°C[0m
+[0;32mI (500257) example: 3... [0m
+[0;32mI (500917) RX_TASK: Humadity: 53%[0m
+[0;32mI (500917) RX_TASK: Temperature: 24°C[0m
+[0;32mI (501257) example: 2... [0m
+[0;32mI (501937) RX_TASK: Humadity: 53%[0m
+[0;32mI (501937) RX_TASK: Temperature: 24°C[0m
+[0;32mI (502257) example: 1... [0m
+[0;32mI (502967) RX_TASK: Humadity: 53%[0m
+[0;32mI (502967) RX_TASK: Temperature: 24°C[0m
+[0;32mI (503257) example: 0... [0m
+[0;32mI (503987) RX_TASK: Humadity: 53%[0m
+[0;32mI (503987) RX_TASK: Temperature: 24°C[0m
+[0;32mI (504257) example: Starting again![0m
+[0;32mI (504257) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (504257) example: ... allocated socket[0m
+[0;32mI (504597) example: ... connected[0m
+[0;32mI (504597) example: ... socket send success[0m
+[0;32mI (504597) example: ... set socket receiving timeout success[0m
+[0;32mI (505017) RX_TASK: Humadity: 53%[0m
+[0;32mI (505017) RX_TASK: Temperature: 24°C[0m
+0[0;32mI (505207) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (505217) example: 10... [0m
+[0;32mI (506037) RX_TASK: Humadity: 53%[0m
+[0;32mI (506037) RX_TASK: Temperature: 24°C[0m
+[0;32mI (506217) example: 9... [0m
+[0;32mI (507067) RX_TASK: Humadity: 53%[0m
+[0;32mI (507067) RX_TASK: Temperature: 24°C[0m
+[0;32mI (507217) example: 8... [0m
+[0;32mI (508087) RX_TASK: Humadity: 53%[0m
+[0;32mI (508087) RX_TASK: Temperature: 24°C[0m
+[0;32mI (508217) example: 7... [0m
+[0;32mI (509117) RX_TASK: Humadity: 54%[0m
+[0;32mI (509117) RX_TASK: Temperature: 24°C[0m
+[0;32mI (509217) example: 6... [0m
+[0;32mI (510137) RX_TASK: Humadity: 54%[0m
+[0;32mI (510137) RX_TASK: Temperature: 24°C[0m
+[0;32mI (510217) example: 5... [0m
+[0;32mI (511167) RX_TASK: Humadity: 54%[0m
+[0;32mI (511167) RX_TASK: Temperature: 24°C[0m
+[0;32mI (511217) example: 4... [0m
+[0;32mI (512187) RX_TASK: Humadity: 54%[0m
+[0;32mI (512187) RX_TASK: Temperature: 24°C[0m
+[0;32mI (512217) example: 3... [0m
+[0;32mI (513217) RX_TASK: Humadity: 54%[0m
+[0;32mI (513217) RX_TASK: Temperature: 25°C[0m
+[0;32mI (513217) example: 2... [0m
+[0;32mI (514217) example: 1... [0m
+[0;32mI (514237) RX_TASK: Humadity: 54%[0m
+[0;32mI (514237) RX_TASK: Temperature: 25°C[0m
+����������������������������������������������������������������[0m
+[0;32mI (515267) RX_TASK: Humadity: 54%[0m
+[0;32mI (515267) RX_TASK: Temperature: 25°C[0m
+[0;32mI (516217) example: Starting again![0m
+[0;32mI (516217) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (516217) example: ... allocated socket[0m
+[0;32mI (516287) RX_TASK: Humadity: 54%[0m
+[0;32mI (516287) RX_TASK: Temperature: 25°C[0m
+[0;32mI (516577) example: ... connected[0m
+[0;32mI (516577) example: ... socket send success[0m
+[0;32mI (516577) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:23:52Z","entry_id":146,"field1":"25","field2":"54","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (517197) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (517217) example: 10... [0m
+[0;32mI (517317) RX_TASK: Humadity: 54%[0m
+[0;32mI (517317) RX_TASK: Temperature: 25°C[0m
+[0;32mI (518217) example: 9... [0m
+[0;32mI (518337) RX_TASK: Humadity: 54%[0m
+[0;32mI (518337) RX_TASK: Temperature: 25°C[0m
+[0;32mI (519217) example: 8... [0m
+[0;32mI (519367) RX_TASK: Humadity: 54%[0m
+[0;32mI (519367) RX_TASK: Temperature: 25°C[0m
+[0;32mI (520217) example: 7... [0m
+[0;32mI (520387) RX_TASK: Humadity: 54%[0m
+[0;32mI (520387) RX_TASK: Temperature: 25°C[0m
+[0;32mI (521217) example: 6... [0m
+[0;32mI (521417) RX_TASK: Humadity: 54%[0m
+[0;32mI (521417) RX_TASK: Temperature: 25°C[0m
+[0;32mI (522217) example: 5... [0m
+[0;32mI (522437) RX_TASK: Humadity: 54%[0m
+[0;32mI (522437) RX_TASK: Temperature: 25°C[0m
+[0;32mI (523217) example: 4... [0m
+[0;32mI (523467) RX_TASK: Humadity: 54%[0m
+[0;32mI (523467) RX_TASK: Temperature: 25°C[0m
+[0;32mI (524217) example: 3... [0m
+[0;32mI (524487) RX_TASK: Humadity: 54%[0m
+[0;32mI (524487) RX_TASK: Temperature: 25°C[0m
+[0;32mI (525217) example: 2... [0m
+[0;32mI (525517) RX_TASK: Humadity: 54%[0m
+[0;32mI (525517) RX_TASK: Temperature: 25°C[0m
+[0;32mI (526217) example: 1... [0m
+[0;32mI (526537) RX_TASK: Humadity: 54%[0m
+[0;32mI (526537) RX_TASK: Temperature: 25°C[0m
+[0;32mI (527217) example: 0... [0m
+[0;32mI (527567) RX_TASK: Humadity: 54%[0m
+[0;32mI (527567) RX_TASK: Temperature: 25°C[0m
+[0;32mI (528217) example: Starting again![0m
+[0;32mI (528217) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (528217) example: ... allocated socket[0m
+[0;32mI (528557) example: ... connected[0m
+[0;32mI (528557) example: ... socket send success[0m
+[0;32mI (528557) example: ... set socket receiving timeout success[0m
+[0;32mI (528587) RX_TASK: Humadity: 54%[0m
+[0;32mI (528587) RX_TASK: Temperature: 25°C[0m
+0[0;32mI (528867) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (528867) example: 10... [0m
+[0;32mI (529617) RX_TASK: Humadity: 54%[0m
+[0;32mI (529617) RX_TASK: Temperature: 25°C[0m
+[0;32mI (529867) example: 9... [0m
+[0;32mI (530637) RX_TASK: Humadity: 54%[0m
+[0;32mI (530637) RX_TASK: Temperature: 25°C[0m
+[0;32mI (530867) example: 8... [0m
+[0;32mI (531667) RX_TASK: Humadity: 54%[0m
+[0;32mI (531667) RX_TASK: Temperature: 25°C[0m
+[0;32mI (531867) example: 7... [0m
+[0;32mI (532687) RX_TASK: Humadity: 54%[0m
+[0;32mI (532687) RX_TASK: Temperature: 25°C[0m
+[0;32mI (532867) example: 6... [0m
+[0;32mI (533717) RX_TASK: Humadity: 53%[0m
+[0;32mI (533717) RX_TASK: Temperature: 25°C[0m
+[0;32mI (533867) example: 5... [0m
+[0;32mI (534737) RX_TASK: Humadity: 53%[0m
+[0;32mI (534737) RX_TASK: Temperature: 25°C[0m
+[0;32mI (534867) example: 4... [0m
+[0;32mI (535767) RX_TASK: Humadity: 53%[0m
+[0;32mI (535767) RX_TASK: Temperature: 25°C[0m
+[0;32mI (535867) example: 3... [0m
+[0;32mI (536787) RX_TASK: Humadity: 53%[0m
+[0;32mI (536787) RX_TASK: Temperature: 25°C[0m
+[0;32mI (536867) example: 2... [0m
+[0;32mI (537817) RX_TASK: Humadity: 53%[0m
+[0;32mI (537817) RX_TASK: Temperature: 25°C[0m
+[0;32mI (537867) example: 1... [0m
+[0;32mI (538837) RX_TASK: Humadity: 54%[0m
+[0;32mI (538837) RX_TASK: Temperature: 25°C[0m
+[0;32mI (538867) example: 0... [0m
+[0;32mI (539867) RX_TASK: Humadity: 53%[0m
+[0;32mI (539867) RX_TASK: Temperature: 25°C[0m
+[0;32mI (539867) example: Starting again![0m
+[0;32mI (539867) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (539867) example: ... allocated socket[0m
+[0;32mI (540457) example: ... connected[0m
+[0;32mI (540457) example: ... socket send success[0m
+[0;32mI (540457) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:24:16Z","entry_id":147,"field1":"25","field2":"53","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (540837) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (540857) example: 10... [0m
+[0;32mI (540887) RX_TASK: Humadity: 53%[0m
+[0;32mI (540887) RX_TASK: Temperature: 25°C[0m
+[0;32mI (541857) example: 9... [0m
+[0;32mI (541917) RX_TASK: Humadity: 53%[0m
+[0;32mI (541917) RX_TASK: Temperature: 25°C[0m
+[0;32mI (542857) example: 8... [0m
+[0;32mI (542937) RX_TASK: Humadity: 53%[0m
+[0;32mI (542937) RX_TASK: Temperature: 25°C[0m
+[0;32mI (543857) example: 7... [0m
+[0;32mI (543957) RX_TASK: Humadity: 53%[0m
+[0;32mI (543957) RX_TASK: Temperature: 25°C[0m
+[0;32mI (544857) example: 6... [0m
+[0;32mI (544987) RX_TASK: Humadity: 53%[0m
+[0;32mI (544987) RX_TASK: Temperature: 25°C[0m
+[0;32mI (545857) example: 5... [0m
+[0;32mI (546007) RX_TASK: Humadity: 53%[0m
+[0;32mI (546007) RX_TASK: Temperature: 25°C[0m
+[0;32mI (546857) example: 4... [0m
+[0;32mI (547037) RX_TASK: Humadity: 53%[0m
+[0;32mI (547037) RX_TASK: Temperature: 25°C[0m
+[0;32mI (547857) example: 3... [0m
+[0;32mI (548057) RX_TASK: Humadity: 53%[0m
+[0;32mI (548057) RX_TASK: Temperature: 25°C[0m
+[0;32mI (548857) example: 2... [0m
+[0;32mI (549087) RX_TASK: Humadity: 53%[0m
+[0;32mI (549087) RX_TASK: Temperature: 25°C[0m
+[0;32mI (549857) example: 1... [0m
+[0;32mI (550107) RX_TASK: Humadity: 53%[0m
+[0;32mI (550107) RX_TASK: Temperature: 25°C[0m
+[0;32mI (550857) example: 0... [0m
+[0;32mI (551137) RX_TASK: Humadity: 53%[0m
+[0;32mI (551137) RX_TASK: Temperature: 25°C[0m
+[0;32mI (551857) example: Starting again![0m
+[0;32mI (551857) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (551857) example: ... allocated socket[0m
+[0;32mI (552157) RX_TASK: Humadity: 53%[0m
+[0;32mI (552157) RX_TASK: Temperature: 25°C[0m
+[0;32mI (552517) example: ... connected[0m
+[0;32mI (552517) example: ... socket send success[0m
+[0;32mI (552517) example: ... set socket receiving timeout success[0m
+0[0;32mI (552827) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (552827) example: 10... [0m
+[0;32mI (553187) RX_TASK: Humadity: 53%[0m
+[0;32mI (553187) RX_TASK: Temperature: 25°C[0m
+[0;32mI (553837) example: 9... [0m
+[0;32mI (554207) RX_TASK: Humadity: 53%[0m
+[0;32mI (554207) RX_TASK: Temperature: 25°C[0m
+[0;32mI (554837) example: 8... [0m
+[0;32mI (555237) RX_TASK: Humadity: 53%[0m
+[0;32mI (555237) RX_TASK: Temperature: 25°C[0m
+[0;32mI (555837) example: 7... [0m
+[0;32mI (556257) RX_TASK: Humadity: 53%[0m
+[0;32mI (556257) RX_TASK: Temperature: 25°C[0m
+[0;32mI (556837) example: 6... [0m
+[0;32mI (557287) RX_TASK: Humadity: 53%[0m
+[0;32mI (557287) RX_TASK: Temperature: 25°C[0m
+[0;32mI (557837) example: 5... [0m
+[0;32mI (558307) RX_TASK: Humadity: 53%[0m
+[0;32mI (558307) RX_TASK: Temperature: 25°C[0m
+[0;32mI (558837) example: 4... [0m
+[0;32mI (559337) RX_TASK: Humadity: 53%[0m
+[0;32mI (559337) RX_TASK: Temperature: 25°C[0m
+[0;32mI (559837) example: 3... [0m
+[0;32mI (560357) RX_TASK: Humadity: 53%[0m
+[0;32mI (560357) RX_TASK: Temperature: 25°C[0m
+[0;32mI (560837) example: 2... [0m
+[0;32mI (561387) RX_TASK: Humadity: 53%[0m
+[0;32mI (561387) RX_TASK: Temperature: 25°C[0m
+[0;32mI (561837) example: 1... [0m
+[0;32mI (562407) RX_TASK: Humadity: 53%[0m
+[0;32mI (562407) RX_TASK: Temperature: 25°C[0m
+[0;32mI (562837) example: 0... [0m
+[0;32mI (563437) RX_TASK: Humadity: 52%[0m
+[0;32mI (563437) RX_TASK: Temperature: 25°C[0m
+[0;32mI (563837) example: Starting again![0m
+[0;32mI (563837) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (563837) example: ... allocated socket[0m
+[0;32mI (564197) example: ... connected[0m
+[0;32mI (564197) example: ... socket send success[0m
+[0;32mI (564197) example: ... set socket receiving timeout success[0m
+[0;32mI (564457) RX_TASK: Humadity: 52%[0m
+[0;32mI (564457) RX_TASK: Temperature: 25°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:24:40Z","entry_id":148,"field1":"25","field2":"52","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (564527) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (564547) example: 10... [0m
+[0;32mI (565487) RX_TASK: Humadity: 52%[0m
+[0;32mI (565487) RX_TASK: Temperature: 25°C[0m
+[0;32mI (565547) example: 9... [0m
+[0;32mI (566507) RX_TASK: Humadity: 52%[0m
+[0;32mI (566507) RX_TASK: Temperature: 25°C[0m
+[0;32mI (566547) example: 8... [0m
+[0;32mI (567537) RX_TASK: Humadity: 52%[0m
+[0;32mI (567537) RX_TASK: Temperature: 25°C[0m
+[0;32mI (567547) example: 7... [0m
+[0;32mI (568547) example: 6... [0m
+[0;32mI (568557) RX_TASK: Humadity: 52%[0m
+[0;32mI (568557) RX_TASK: Temperature: 25°C[0m
+[0;32mI (569547) example: 5... [0m
+[0;32mI (569587) RX_TASK: Humadity: 52%[0m
+[0;32mI (569587) RX_TASK: Temperature: 25°C[0m
+[0;32mI (570547) example: 4... [0m
+[0;32mI (570607) RX_TASK: Humadity: 52%[0m
+[0;32mI (570607) RX_TASK: Temperature: 25°C[0m
+[0;32mI (571547) example: 3... [0m
+[0;32mI (571637) RX_TASK: Humadity: 52%[0m
+[0;32mI (571637) RX_TASK: Temperature: 25°C[0m
+[0;32mI (572547) example: 2... [0m
+[0;32mI (572657) RX_TASK: Humadity: 52%[0m
+[0;32mI (572657) RX_TASK: Temperature: 25°C[0m
+[0;32mI (573547) example: 1... [0m
+[0;32mI (573687) RX_TASK: Humadity: 52%[0m
+[0;32mI (573687) RX_TASK: Temperature: 25°C[0m
+[0;32mI (574547) example: 0... [0m
+[0;32mI (574707) RX_TASK: Humadity: 51%[0m
+[0;32mI (574707) RX_TASK: Temperature: 25°C[0m
+[0;32mI (575547) example: Starting again![0m
+[0;32mI (575587) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (575597) example: ... allocated socket[0m
+[0;32mI (575737) RX_TASK: Humadity: 52%[0m
+[0;32mI (575737) RX_TASK: Temperature: 25°C[0m
+[0;32mI (576177) example: ... connected[0m
+[0;32mI (576177) example: ... socket send success[0m
+[0;32mI (576177) example: ... set socket receiving timeout success[0m
+0[0;32mI (576477) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (576487) example: 10... [0m
+[0;32mI (576757) RX_TASK: Humadity: 51%[0m
+[0;32mI (576757) RX_TASK: Temperature: 25°C[0m
+[0;32mI (577487) example: 9... [0m
+[0;32mI (577787) RX_TASK: Humadity: 51%[0m
+[0;32mI (577787) RX_TASK: Temperature: 25°C[0m
+[0;32mI (578487) example: 8... [0m
+[0;32mI (578807) RX_TASK: Humadity: 51%[0m
+[0;32mI (578807) RX_TASK: Temperature: 25°C[0m
+[0;32mI (579487) example: 7... [0m
+[0;32mI (579837) RX_TASK: Humadity: 51%[0m
+[0;32mI (579837) RX_TASK: Temperature: 25°C[0m
+[0;32mI (580487) example: 6... [0m
+[0;32mI (580857) RX_TASK: Humadity: 51%[0m
+[0;32mI (580857) RX_TASK: Temperature: 25°C[0m
+[0;32mI (581487) example: 5... [0m
+[0;32mI (581887) RX_TASK: Humadity: 51%[0m
+[0;32mI (581887) RX_TASK: Temperature: 25°C[0m
+[0;32mI (582487) example: 4... [0m
+[0;32mI (582907) RX_TASK: Humadity: 51%[0m
+[0;32mI (582907) RX_TASK: Temperature: 25°C[0m
+[0;32mI (583487) example: 3... [0m
+[0;32mI (583937) RX_TASK: Humadity: 51%[0m
+[0;32mI (583937) RX_TASK: Temperature: 25°C[0m
+[0;32mI (584487) example: 2... [0m
+[0;32mI (584957) RX_TASK: Humadity: 51%[0m
+[0;32mI (584957) RX_TASK: Temperature: 25°C[0m
+[0;32mI (585487) example: 1... [0m
+[0;32mI (585987) RX_TASK: Humadity: 51%[0m
+[0;32mI (585987) RX_TASK: Temperature: 25°C[0m
+[0;32mI (586487) example: 0... [0m
+[0;32mI (587007) RX_TASK: Humadity: 51%[0m
+[0;32mI (587007) RX_TASK: Temperature: 25°C[0m
+[0;32mI (587487) example: Starting again![0m
+[0;32mI (587487) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (587487) example: ... allocated socket[0m
+[0;32mI (588037) RX_TASK: Humadity: 51%[0m
+[0;32mI (588037) RX_TASK: Temperature: 25°C[0m
+[0;32mI (589057) RX_TASK: Humadity: 51%[0m
+[0;32mI (589057) RX_TASK: Temperature: 25°C[0m
+[0;32mI (589687) example: ... connected[0m
+[0;32mI (589697) example: ... socket send success[0m
+[0;32mI (589697) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:25:05Z","entry_id":149,"field1":"25","field2":"51","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (590017) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (590027) example: 10... [0m
+[0;32mI (590087) RX_TASK: Humadity: 51%[0m
+[0;32mI (590087) RX_TASK: Temperature: 26°C[0m
+[0;32mI (591037) example: 9... [0m
+[0;32mI (591107) RX_TASK: Humadity: 51%[0m
+[0;32mI (591107) RX_TASK: Temperature: 26°C[0m
+[0;32mI (592037) example: 8... [0m
+[0;32mI (592137) RX_TASK: Humadity: 51%[0m
+[0;32mI (592137) RX_TASK: Temperature: 26°C[0m
+[0;32mI (593037) example: 7... [0m
+[0;32mI (593157) RX_TASK: Humadity: 51%[0m
+[0;32mI (593157) RX_TASK: Temperature: 26°C[0m
+[0;32mI (594037) example: 6... [0m
+[0;32mI (594187) RX_TASK: Humadity: 51%[0m
+[0;32mI (594187) RX_TASK: Temperature: 26°C[0m
+[0;32mI (595037) example: 5... [0m
+[0;32mI (595207) RX_TASK: Humadity: 51%[0m
+[0;32mI (595207) RX_TASK: Temperature: 26°C[0m
+[0;32mI (596037) example: 4... [0m
+[0;32mI (596237) RX_TASK: Humadity: 50%[0m
+[0;32mI (596237) RX_TASK: Temperature: 26°C[0m
+[0;32mI (597037) example: 3... [0m
+[0;32mI (597257) RX_TASK: Humadity: 50%[0m
+[0;32mI (597257) RX_TASK: Temperature: 26°C[0m
+[0;32mI (598037) example: 2... [0m
+[0;32mI (598287) RX_TASK: Humadity: 50%[0m
+[0;32mI (598287) RX_TASK: Temperature: 26°C[0m
+[0;32mI (599037) example: 1... [0m
+[0;32mI (599307) RX_TASK: Humadity: 50%[0m
+[0;32mI (599307) RX_TASK: Temperature: 26°C[0m
+[0;32mI (600037) example: 0... [0m
+[0;32mI (600337) RX_TASK: Humadity: 50%[0m
+[0;32mI (600337) RX_TASK: Temperature: 26°C[0m
+[0;32mI (601037) example: Starting again![0m
+[0;32mI (601037) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (601037) example: ... allocated socket[0m
+[0;32mI (601357) RX_TASK: Humadity: 50%[0m
+[0;32mI (601357) RX_TASK: Temperature: 26°C[0m
+[0;32mI (602387) RX_TASK: Humadity: 50%[0m
+[0;32mI (602387) RX_TASK: Temperature: 26°C[0m
+[0;32mI (602597) example: ... connected[0m
+[0;32mI (602597) example: ... socket send success[0m
+[0;32mI (602597) example: ... set socket receiving timeout success[0m
+0[0;32mI (603217) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (603217) example: 10... [0m
+[0;32mI (603407) RX_TASK: Humadity: 50%[0m
+[0;32mI (603407) RX_TASK: Temperature: 26°C[0m
+[0;32mI (604217) example: 9... [0m
+[0;32mI (604437) RX_TASK: Humadity: 50%[0m
+[0;32mI (604437) RX_TASK: Temperature: 26°C[0m
+[0;32mI (605217) example: 8... [0m
+[0;32mI (605457) RX_TASK: Humadity: 50%[0m
+[0;32mI (605457) RX_TASK: Temperature: 26°C[0m
+[0;32mI (606217) example: 7... [0m
+[0;32mI (606487) RX_TASK: Humadity: 50%[0m
+[0;32mI (606487) RX_TASK: Temperature: 26°C[0m
+[0;32mI (607217) example: 6... [0m
+[0;32mI (607507) RX_TASK: Humadity: 50%[0m
+[0;32mI (607507) RX_TASK: Temperature: 26°C[0m
+[0;32mI (608217) example: 5... [0m
+[0;32mI (608537) RX_TASK: Humadity: 50%[0m
+[0;32mI (608537) RX_TASK: Temperature: 26°C[0m
+[0;32mI (609217) example: 4... [0m
+[0;32mI (609557) RX_TASK: Humadity: 50%[0m
+[0;32mI (609557) RX_TASK: Temperature: 26°C[0m
+[0;32mI (610217) example: 3... [0m
+[0;32mI (610587) RX_TASK: Humadity: 50%[0m
+[0;32mI (610587) RX_TASK: Temperature: 26°C[0m
+[0;32mI (611217) example: 2... [0m
+[0;32mI (611607) RX_TASK: Humadity: 50%[0m
+[0;32mI (611607) RX_TASK: Temperature: 26°C[0m
+[0;32mI (612217) example: 1... [0m
+[0;32mI (612637) RX_TASK: Humadity: 50%[0m
+[0;32mI (612637) RX_TASK: Temperature: 26°C[0m
+[0;32mI (613217) example: 0... [0m
+[0;32mI (613657) RX_TASK: Humadity: 50%[0m
+[0;32mI (613657) RX_TASK: Temperature: 26°C[0m
+[0;32mI (614217) example: Starting again![0m
+[0;32mI (614577) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (614577) example: ... allocated socket[0m
+[0;32mI (614687) RX_TASK: Humadity: 50%[0m
+[0;32mI (614687) RX_TASK: Temperature: 26°C[0m
+[0;32mI (615237) example: ... connected[0m
+[0;32mI (615237) example: ... socket send success[0m
+[0;32mI (615237) example: ... set socket receiving timeout success[0m
+[0;32mI (615707) RX_TASK: Humadity: 50%[0m
+[0;32mI (615707) RX_TASK: Temperature: 26°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:25:31Z","entry_id":150,"field1":"26","field2":"50","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (616137) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (616157) example: 10... [0m
+[0;32mI (616737) RX_TASK: Humadity: 50%[0m
+[0;32mI (616737) RX_TASK: Temperature: 26°C[0m
+[0;32mI (617157) example: 9... [0m
+[0;32mI (617757) RX_TASK: Humadity: 50%[0m
+[0;32mI (617757) RX_TASK: Temperature: 26°C[0m
+[0;32mI (618157) example: 8... [0m
+[0;32mI (618787) RX_TASK: Humadity: 50%[0m
+[0;32mI (618787) RX_TASK: Temperature: 26°C[0m
+[0;32mI (619157) example: 7... [0m
+[0;32mI (619807) RX_TASK: Humadity: 50%[0m
+[0;32mI (619807) RX_TASK: Temperature: 26°C[0m
+[0;32mI (620157) example: 6... [0m
+[0;32mI (620837) RX_TASK: Humadity: 50%[0m
+[0;32mI (620837) RX_TASK: Temperature: 26°C[0m
+[0;32mI (621157) example: 5... [0m
+[0;32mI (621857) RX_TASK: Humadity: 49%[0m
+[0;32mI (621857) RX_TASK: Temperature: 26°C[0m
+[0;32mI (622157) example: 4... [0m
+[0;32mI (622887) RX_TASK: Humadity: 49%[0m
+[0;32mI (622887) RX_TASK: Temperature: 26°C[0m
+[0;32mI (623157) example: 3... [0m
+[0;32mI (623907) RX_TASK: Humadity: 49%[0m
+[0;32mI (623907) RX_TASK: Temperature: 26°C[0m
+[0;32mI (624157) example: 2... [0m
+[0;32mI (624937) RX_TASK: Humadity: 49%[0m
+[0;32mI (624937) RX_TASK: Temperature: 26°C[0m
+[0;32mI (625157) example: 1... [0m
+[0;32mI (625957) RX_TASK: Humadity: 49%[0m
+[0;32mI (625957) RX_TASK: Temperature: 26°C[0m
+[0;32mI (626157) example: 0... [0m
+[0;32mI (626987) RX_TASK: Humadity: 49%[0m
+[0;32mI (626987) RX_TASK: Temperature: 26°C[0m
+[0;32mI (627157) example: Starting again![0m
+[0;32mI (627157) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (627157) example: ... allocated socket[0m
+[0;32mI (627477) example: ... connected[0m
+[0;32mI (627477) example: ... socket send success[0m
+[0;32mI (627477) example: ... set socket receiving timeout success[0m
+[0;32mI (628007) RX_TASK: Humadity: 49%[0m
+[0;32mI (628007) RX_TASK: Temperature: 26°C[0m
+0[0;32mI (628097) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (628097) example: 10... [0m
+[0;32mI (629037) RX_TASK: Humadity: 49%[0m
+[0;32mI (629037) RX_TASK: Temperature: 26°C[0m
+[0;32mI (629097) example: 9... [0m
+[0;32mI (630057) RX_TASK: Humadity: 49%[0m
+[0;32mI (630057) RX_TASK: Temperature: 26°C[0m
+[0;32mI (630097) example: 8... [0m
+[0;32mI (631087) RX_TASK: Humadity: 49%[0m
+[0;32mI (631087) RX_TASK: Temperature: 26°C[0m
+[0;32mI (631097) example: 7... [0m
+[0;32mI (632097) example: 6... [0m
+[0;32mI (632107) RX_TASK: Humadity: 49%[0m
+[0;32mI (632107) RX_TASK: Temperature: 26°C[0m
+[0;32mI (633097) example: 5... [0m
+[0;32mI (633137) RX_TASK: Humadity: 49%[0m
+[0;32mI (633137) RX_TASK: Temperature: 26°C[0m
+[0;32mI (634097) example: 4... [0m
+[0;32mI (634157) RX_TASK: Humadity: 49%[0m
+[0;32mI (634157) RX_TASK: Temperature: 26°C[0m
+[0;32mI (635097) example: 3... [0m
+[0;32mI (635187) RX_TASK: Humadity: 49%[0m
+[0;32mI (635187) RX_TASK: Temperature: 26°C[0m
+[0;32mI (636097) example: 2... [0m
+[0;32mI (636207) RX_TASK: Humadity: 49%[0m
+[0;32mI (636207) RX_TASK: Temperature: 26°C[0m
+[0;32mI (637097) example: 1... [0m
+[0;32mI (637237) RX_TASK: Humadity: 49%[0m
+[0;32mI (637237) RX_TASK: Temperature: 26°C[0m
+[0;32mI (638097) example: 0... [0m
+[0;32mI (638257) RX_TASK: Humadity: 49%[0m
+[0;32mI (638257) RX_TASK: Temperature: 26°C[0m
+[0;32mI (639097) example: Starting again![0m
+[0;32mI (639097) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (639097) example: ... allocated socket[0m
+[0;32mI (639287) RX_TASK: Humadity: 49%[0m
+[0;32mI (639287) RX_TASK: Temperature: 26°C[0m
+[0;32mI (639457) example: ... connected[0m
+[0;32mI (639457) example: ... socket send success[0m
+[0;32mI (639457) example: ... set socket receiving timeout success[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:25:55Z","entry_id":151,"field1":"26","field2":"49","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (639797) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (639807) example: 10... [0m
+[0;32mI (640307) RX_TASK: Humadity: 49%[0m
+[0;32mI (640307) RX_TASK: Temperature: 26°C[0m
+[0;32mI (640807) example: 9... [0m
+[0;32mI (641337) RX_TASK: Humadity: 49%[0m
+[0;32mI (641337) RX_TASK: Temperature: 26°C[0m
+[0;32mI (641807) example: 8... [0m
+[0;32mI (642357) RX_TASK: Humadity: 49%[0m
+[0;32mI (642357) RX_TASK: Temperature: 26°C[0m
+[0;32mI (642807) example: 7... [0m
+[0;32mI (643387) RX_TASK: Humadity: 49%[0m
+[0;32mI (643387) RX_TASK: Temperature: 26°C[0m
+[0;32mI (643807) example: 6... [0m
+[0;32mI (644407) RX_TASK: Humadity: 49%[0m
+[0;32mI (644407) RX_TASK: Temperature: 26°C[0m
+[0;32mI (644807) example: 5... [0m
+[0;32mI (645437) RX_TASK: Humadity: 49%[0m
+[0;32mI (645437) RX_TASK: Temperature: 26°C[0m
+[0;32mI (645807) example: 4... [0m
+[0;32mI (646457) RX_TASK: Humadity: 49%[0m
+[0;32mI (646457) RX_TASK: Temperature: 26°C[0m
+[0;32mI (646807) example: 3... [0m
+[0;32mI (647487) RX_TASK: Humadity: 49%[0m
+[0;32mI (647487) RX_TASK: Temperature: 26°C[0m
+[0;32mI (647807) example: 2... [0m
+[0;32mI (648507) RX_TASK: Humadity: 49%[0m
+[0;32mI (648507) RX_TASK: Temperature: 26°C[0m
+[0;32mI (648807) example: 1... [0m
+[0;32mI (649537) RX_TASK: Humadity: 49%[0m
+[0;32mI (649537) RX_TASK: Temperature: 26°C[0m
+[0;32mI (649807) example: 0... [0m
+[0;32mI (650557) RX_TASK: Humadity: 49%[0m
+[0;32mI (650557) RX_TASK: Temperature: 26°C[0m
+[0;32mI (650807) example: Starting again![0m
+[0;32mI (650807) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (650807) example: ... allocated socket[0m
+[0;32mI (651137) example: ... connected[0m
+[0;32mI (651137) example: ... socket send success[0m
+[0;32mI (651137) example: ... set socket receiving timeout success[0m
+[0;32mI (651587) RX_TASK: Humadity: 49%[0m
+[0;32mI (651587) RX_TASK: Temperature: 26°C[0m
+0[0;32mI (651787) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (651787) example: 10... [0m
+[0;32mI (652607) RX_TASK: Humadity: 49%[0m
+[0;32mI (652607) RX_TASK: Temperature: 26°C[0m
+[0;32mI (652797) example: 9... [0m
+[0;32mI (653637) RX_TASK: Humadity: 49%[0m
+[0;32mI (653637) RX_TASK: Temperature: 26°C[0m
+[0;32mI (653797) example: 8... [0m
+[0;32mI (654657) RX_TASK: Humadity: 49%[0m
+[0;32mI (654657) RX_TASK: Temperature: 26°C[0m
+[0;32mI (654797) example: 7... [0m
+[0;32mI (655687) RX_TASK: Humadity: 48%[0m
+[0;32mI (655687) RX_TASK: Temperature: 26°C[0m
+[0;32mI (655797) example: 6... [0m
+[0;32mI (656707) RX_TASK: Humadity: 48%[0m
+[0;32mI (656707) RX_TASK: Temperature: 26°C[0m
+[0;32mI (656797) example: 5... [0m
+[0;32mI (657737) RX_TASK: Humadity: 48%[0m
+[0;32mI (657737) RX_TASK: Temperature: 26°C[0m
+[0;32mI (657797) example: 4... [0m
+[0;32mI (658757) RX_TASK: Humadity: 48%[0m
+[0;32mI (658757) RX_TASK: Temperature: 26°C[0m
+[0;32mI (658797) example: 3... [0m
+[0;32mI (659787) RX_TASK: Humadity: 48%[0m
+[0;32mI (659787) RX_TASK: Temperature: 26°C[0m
+[0;32mI (659797) example: 2... [0m
+[0;32mI (660797) example: 1... [0m
+[0;32mI (660807) RX_TASK: Humadity: 48%[0m
+[0;32mI (660807) RX_TASK: Temperature: 26°C[0m
+[0;32mI (661797) example: 0... [0m
+[0;32mI (661837) RX_TASK: Humadity: 48%[0m
+[0;32mI (661837) RX_TASK: Temperature: 26°C[0m
+[0;32mI (662797) example: Starting again![0m
+[0;32mI (662797) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (662797) example: ... allocated socket[0m
+[0;32mI (662857) RX_TASK: Humadity: 48%[0m
+[0;32mI (662857) RX_TASK: Temperature: 26°C[0m
+[0;32mI (663527) example: ... connected[0m
+[0;32mI (663527) example: ... socket send success[0m
+[0;32mI (663527) example: ... set socket receiving timeout success[0m
+[0;32mI (663887) RX_TASK: Humadity: 48%[0m
+[0;32mI (663887) RX_TASK: Temperature: 26°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:26:19Z","entry_id":152,"field1":"26","field2":"48","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (664037) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (664057) example: 10... [0m
+[0;32mI (664907) RX_TASK: Humadity: 48%[0m
+[0;32mI (664907) RX_TASK: Temperature: 26°C[0m
+[0;32mI (665057) example: 9... [0m
+[0;32mI (665937) RX_TASK: Humadity: 48%[0m
+[0;32mI (665937) RX_TASK: Temperature: 26°C[0m
+[0;32mI (666057) example: 8... [0m
+[0;32mI (666957) RX_TASK: Humadity: 48%[0m
+[0;32mI (666957) RX_TASK: Temperature: 26°C[0m
+[0;32mI (667057) example: 7... [0m
+[0;32mI (667987) RX_TASK: Humadity: 48%[0m
+[0;32mI (667987) RX_TASK: Temperature: 26°C[0m
+[0;32mI (668057) example: 6... [0m
+[0;32mI (669007) RX_TASK: Humadity: 48%[0m
+[0;32mI (669007) RX_TASK: Temperature: 26°C[0m
+[0;32mI (669057) example: 5... [0m
+[0;32mI (670037) RX_TASK: Humadity: 48%[0m
+[0;32mI (670037) RX_TASK: Temperature: 26°C[0m
+[0;32mI (670057) example: 4... [0m
+[0;32mI (671057) RX_TASK: Humadity: 48%[0m
+[0;32mI (671057) RX_TASK: Temperature: 26°C[0m
+[0;32mI (671057) example: 3... [0m
+[0;32mI (672057) example: 2... [0m
+[0;32mI (672087) RX_TASK: Humadity: 48%[0m
+[0;32mI (672087) RX_TASK: Temperature: 26°C[0m
+[0;32mI (673057) example: 1... [0m
+[0;32mI (673107) RX_TASK: Humadity: 48%[0m
+[0;32mI (673107) RX_TASK: Temperature: 26°C[0m
+[0;32mI (674057) example: 0... [0m
+[0;32mI (674137) RX_TASK: Humadity: 48%[0m
+[0;32mI (674137) RX_TASK: Temperature: 26°C[0m
+[0;32mI (675057) example: Starting again![0m
+[0;32mI (675057) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (675057) example: ... allocated socket[0m
+[0;32mI (675157) RX_TASK: Humadity: 48%[0m
+[0;32mI (675157) RX_TASK: Temperature: 26°C[0m
+[0;32mI (675457) example: ... connected[0m
+[0;32mI (675457) example: ... socket send success[0m
+[0;32mI (675457) example: ... set socket receiving timeout success[0m
+0[0;32mI (676017) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (676027) example: 10... [0m
+[0;32mI (676187) RX_TASK: Humadity: 48%[0m
+[0;32mI (676187) RX_TASK: Temperature: 26°C[0m
+[0;32mI (677027) example: 9... [0m
+[0;32mI (677207) RX_TASK: Humadity: 48%[0m
+[0;32mI (677207) RX_TASK: Temperature: 26°C[0m
+[0;32mI (678027) example: 8... [0m
+[0;32mI (678237) RX_TASK: Humadity: 48%[0m
+[0;32mI (678237) RX_TASK: Temperature: 26°C[0m
+[0;32mI (679027) example: 7... [0m
+[0;32mI (679257) RX_TASK: Humadity: 48%[0m
+[0;32mI (679257) RX_TASK: Temperature: 26°C[0m
+[0;32mI (680027) example: 6... [0m
+[0;32mI (680287) RX_TASK: Humadity: 48%[0m
+[0;32mI (680287) RX_TASK: Temperature: 26°C[0m
+[0;32mI (681027) example: 5... [0m
+[0;32mI (681307) RX_TASK: Humadity: 48%[0m
+[0;32mI (681307) RX_TASK: Temperature: 26°C[0m
+[0;32mI (682027) example: 4... [0m
+[0;32mI (682337) RX_TASK: Humadity: 48%[0m
+[0;32mI (682337) RX_TASK: Temperature: 26°C[0m
+[0;32mI (683027) example: 3... [0m
+[0;32mI (683357) RX_TASK: Humadity: 48%[0m
+[0;32mI (683357) RX_TASK: Temperature: 26°C[0m
+[0;32mI (684027) example: 2... [0m
+[0;32mI (684387) RX_TASK: Humadity: 48%[0m
+[0;32mI (684387) RX_TASK: Temperature: 26°C[0m
+[0;32mI (685027) example: 1... [0m
+[0;32mI (685407) RX_TASK: Humadity: 48%[0m
+[0;32mI (685407) RX_TASK: Temperature: 26°C[0m
+[0;32mI (686027) example: 0... [0m
+[0;32mI (686437) RX_TASK: Humadity: 48%[0m
+[0;32mI (686437) RX_TASK: Temperature: 26°C[0m
+[0;32mI (687027) example: Starting again![0m
+[0;32mI (687027) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (687027) example: ... allocated socket[0m
+[0;32mI (687387) example: ... connected[0m
+[0;32mI (687387) example: ... socket send success[0m
+[0;32mI (687387) example: ... set socket receiving timeout success[0m
+[0;32mI (687457) RX_TASK: Humadity: 48%[0m
+[0;32mI (687457) RX_TASK: Temperature: 26°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:26:43Z","entry_id":153,"field1":"26","field2":"48","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (688007) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (688027) example: 10... [0m
+[0;32mI (688487) RX_TASK: Humadity: 48%[0m
+[0;32mI (688487) RX_TASK: Temperature: 26°C[0m
+[0;32mI (689027) example: 9... [0m
+[0;32mI (689507) RX_TASK: Humadity: 48%[0m
+[0;32mI (689507) RX_TASK: Temperature: 26°C[0m
+[0;32mI (690027) example: 8... [0m
+[0;32mI (690537) RX_TASK: Humadity: 48%[0m
+[0;32mI (690537) RX_TASK: Temperature: 26°C[0m
+[0;32mI (691027) example: 7... [0m
+[0;32mI (691557) RX_TASK: Humadity: 48%[0m
+[0;32mI (691557) RX_TASK: Temperature: 26°C[0m
+[0;32mI (692027) example: 6... [0m
+[0;32mI (692587) RX_TASK: Humadity: 48%[0m
+[0;32mI (692587) RX_TASK: Temperature: 26°C[0m
+[0;32mI (693027) example: 5... [0m
+[0;32mI (693607) RX_TASK: Humadity: 48%[0m
+[0;32mI (693607) RX_TASK: Temperature: 26°C[0m
+[0;32mI (694027) example: 4... [0m
+[0;32mI (694637) RX_TASK: Humadity: 48%[0m
+[0;32mI (694637) RX_TASK: Temperature: 26°C[0m
+[0;32mI (695027) example: 3... [0m
+[0;32mI (695657) RX_TASK: Humadity: 48%[0m
+[0;32mI (695657) RX_TASK: Temperature: 26°C[0m
+[0;32mI (696027) example: 2... [0m
+[0;32mI (696687) RX_TASK: Humadity: 48%[0m
+[0;32mI (696687) RX_TASK: Temperature: 26°C[0m
+[0;32mI (697027) example: 1... [0m
+[0;32mI (697707) RX_TASK: Humadity: 48%[0m
+[0;32mI (697707) RX_TASK: Temperature: 26°C[0m
+[0;32mI (698027) example: 0... [0m
+[0;32mI (698737) RX_TASK: Humadity: 48%[0m
+[0;32mI (698737) RX_TASK: Temperature: 26°C[0m
+[0;32mI (699027) example: Starting again![0m
+[0;32mI (699387) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (699397) example: ... allocated socket[0m
+[0;32mI (699757) RX_TASK: Humadity: 48%[0m
+[0;32mI (699757) RX_TASK: Temperature: 26°C[0m
+[0;32mI (699987) example: ... connected[0m
+[0;32mI (699987) example: ... socket send success[0m
+[0;32mI (699987) example: ... set socket receiving timeout success[0m
+0[0;32mI (700597) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (700597) example: 10... [0m
+[0;32mI (700787) RX_TASK: Humadity: 48%[0m
+[0;32mI (700787) RX_TASK: Temperature: 26°C[0m
+[0;32mI (701597) example: 9... [0m
+[0;32mI (701807) RX_TASK: Humadity: 48%[0m
+[0;32mI (701807) RX_TASK: Temperature: 26°C[0m
+[0;32mI (702597) example: 8... [0m
+[0;32mI (702827) RX_TASK: Humadity: 48%[0m
+[0;32mI (702827) RX_TASK: Temperature: 26°C[0m
+[0;32mI (703597) example: 7... [0m
+[0;32mI (703857) RX_TASK: Humadity: 48%[0m
+[0;32mI (703857) RX_TASK: Temperature: 26°C[0m
+[0;32mI (704597) example: 6... [0m
+[0;32mI (704877) RX_TASK: Humadity: 48%[0m
+[0;32mI (704877) RX_TASK: Temperature: 26°C[0m
+[0;32mI (705597) example: 5... [0m
+[0;32mI (705907) RX_TASK: Humadity: 48%[0m
+[0;32mI (705907) RX_TASK: Temperature: 26°C[0m
+[0;32mI (706597) example: 4... [0m
+[0;32mI (706927) RX_TASK: Humadity: 48%[0m
+[0;32mI (706927) RX_TASK: Temperature: 26°C[0m
+[0;32mI (707597) example: 3... [0m
+[0;32mI (707957) RX_TASK: Humadity: 48%[0m
+[0;32mI (707957) RX_TASK: Temperature: 26°C[0m
+[0;32mI (708597) example: 2... [0m
+[0;32mI (708977) RX_TASK: Humadity: 48%[0m
+[0;32mI (708977) RX_TASK: Temperature: 26°C[0m
+W (709207) wifi:[ADDBA]rx delba, code:1, delete tid:0
+[0;32mI (709597) example: 1... [0m
+[0;32mI (710007) RX_TASK: Humadity: 48%[0m
+[0;32mI (710007) RX_TASK: Temperature: 26°C[0m
+[0;32mI (710597) example: 0... [0m
+[0;32mI (711027) RX_TASK: Humadity: 48%[0m
+[0;32mI (711027) RX_TASK: Temperature: 26°C[0m
+[0;32mI (711597) example: Starting again![0m
+[0;32mI (711597) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (711597) example: ... allocated socket[0m
+[0;32mI (711957) example: ... connected[0m
+[0;32mI (711967) example: ... socket send success[0m
+[0;32mI (711967) example: ... set socket receiving timeout success[0m
+[0;32mI (712057) RX_TASK: Humadity: 48%[0m
+[0;32mI (712057) RX_TASK: Temperature: 26°C[0m
+[0;32mI (713077) RX_TASK: Humadity: 48%[0m
+[0;32mI (713077) RX_TASK: Temperature: 26°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:27:08Z","entry_id":154,"field1":"26","field2":"48","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (713227) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (713237) example: 10... [0m
+[0;32mI (714107) RX_TASK: Humadity: 48%[0m
+[0;32mI (714107) RX_TASK: Temperature: 26°C[0m
+[0;32mI (714247) example: 9... [0m
+[0;32mI (715127) RX_TASK: Humadity: 48%[0m
+[0;32mI (715127) RX_TASK: Temperature: 26°C[0m
+[0;32mI (715247) example: 8... [0m
+[0;32mI (716157) RX_TASK: Humadity: 48%[0m
+[0;32mI (716157) RX_TASK: Temperature: 26°C[0m
+[0;32mI (716247) example: 7... [0m
+[0;32mI (717177) RX_TASK: Humadity: 48%[0m
+[0;32mI (717177) RX_TASK: Temperature: 26°C[0m
+[0;32mI (717247) example: 6... [0m
+[0;32mI (718207) RX_TASK: Humadity: 48%[0m
+[0;32mI (718207) RX_TASK: Temperature: 26°C[0m
+[0;32mI (718247) example: 5... [0m
+[0;32mI (719227) RX_TASK: Humadity: 47%[0m
+[0;32mI (719227) RX_TASK: Temperature: 26°C[0m
+[0;32mI (719247) example: 4... [0m
+[0;32mI (720247) example: 3... [0m
+[0;32mI (720257) RX_TASK: Humadity: 47%[0m
+[0;32mI (720257) RX_TASK: Temperature: 26°C[0m
+[0;32mI (721247) example: 2... [0m
+[0;32mI (721277) RX_TASK: Humadity: 47%[0m
+[0;32mI (721277) RX_TASK: Temperature: 26°C[0m
+[0;32mI (722247) example: 1... [0m
+[0;32mI (722307) RX_TASK: Humadity: 47%[0m
+[0;32mI (722307) RX_TASK: Temperature: 26°C[0m
+[0;32mI (723247) example: 0... [0m
+[0;32mI (723327) RX_TASK: Humadity: 47%[0m
+[0;32mI (723327) RX_TASK: Temperature: 26°C[0m
+[0;32mI (724247) example: Starting again![0m
+[0;32mI (724247) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (724247) example: ... allocated socket[0m
+[0;32mI (724357) RX_TASK: Humadity: 47%[0m
+[0;32mI (724357) RX_TASK: Temperature: 26°C[0m
+[0;32mI (724557) example: ... connected[0m
+[0;32mI (724557) example: ... socket send success[0m
+[0;32mI (724557) example: ... set socket receiving timeout success[0m
+0[0;32mI (724997) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (724997) example: 10... [0m
+[0;32mI (725377) RX_TASK: Humadity: 47%[0m
+[0;32mI (725377) RX_TASK: Temperature: 27°C[0m
+[0;32mI (725997) example: 9... [0m
+[0;32mI (726407) RX_TASK: Humadity: 47%[0m
+[0;32mI (726407) RX_TASK: Temperature: 27°C[0m
+[0;32mI (726997) example: 8... [0m
+[0;32mI (727427) RX_TASK: Humadity: 47%[0m
+[0;32mI (727427) RX_TASK: Temperature: 27°C[0m
+[0;32mI (727997) example: 7... [0m
+[0;32mI (728457) RX_TASK: Humadity: 47%[0m
+[0;32mI (728457) RX_TASK: Temperature: 27°C[0m
+[0;32mI (728997) example: 6... [0m
+[0;32mI (729477) RX_TASK: Humadity: 47%[0m
+[0;32mI (729477) RX_TASK: Temperature: 27°C[0m
+[0;32mI (729997) example: 5... [0m
+[0;32mI (730507) RX_TASK: Humadity: 47%[0m
+[0;32mI (730507) RX_TASK: Temperature: 27°C[0m
+[0;32mI (730997) example: 4... [0m
+[0;32mI (731527) RX_TASK: Humadity: 47%[0m
+[0;32mI (731527) RX_TASK: Temperature: 27°C[0m
+[0;32mI (731997) example: 3... [0m
+[0;32mI (732557) RX_TASK: Humadity: 47%[0m
+[0;32mI (732557) RX_TASK: Temperature: 27°C[0m
+[0;32mI (732997) example: 2... [0m
+[0;32mI (733577) RX_TASK: Humadity: 47%[0m
+[0;32mI (733577) RX_TASK: Temperature: 27°C[0m
+[0;32mI (733997) example: 1... [0m
+[0;32mI (734607) RX_TASK: Humadity: 47%[0m
+[0;32mI (734607) RX_TASK: Temperature: 27°C[0m
+[0;32mI (734997) example: 0... [0m
+[0;32mI (735627) RX_TASK: Humadity: 47%[0m
+[0;32mI (735627) RX_TASK: Temperature: 27°C[0m
+[0;32mI (735997) example: Starting again![0m
+[0;32mI (735997) example: DNS lookup succeeded. IP=18.204.133.170[0m
+[0;32mI (735997) example: ... allocated socket[0m
+[0;32mI (736657) RX_TASK: Humadity: 47%[0m
+[0;32mI (736657) RX_TASK: Temperature: 27°C[0m
+[0;32mI (737677) RX_TASK: Humadity: 47%[0m
+[0;32mI (737677) RX_TASK: Temperature: 27°C[0m
+[0;32mI (738077) example: ... connected[0m
+[0;32mI (738077) example: ... socket send success[0m
+[0;32mI (738077) example: ... set socket receiving timeout success[0m
+[0;32mI (738707) RX_TASK: Humadity: 47%[0m
+[0;32mI (738707) RX_TASK: Temperature: 27°C[0m
+{"channel_id":2568560,"created_at":"2024-06-08T02:27:34Z","entry_id":155,"field1":"27","field2":"47","field3":null,"field4":null,"field5":null,"field6":null,"field7":null,"field8":null,"latitude":null,"longitude":null,"elevation":null,"status":null}[0;32mI (738727) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (738747) example: 10... [0m
+[0;32mI (739727) RX_TASK: Humadity: 47%[0m
+[0;32mI (739727) RX_TASK: Temperature: 27°C[0m
+[0;32mI (739747) example: 9... [0m
+[0;32mI (740747) example: 8... [0m
+[0;32mI (740757) RX_TASK: Humadity: 47%[0m
+[0;32mI (740757) RX_TASK: Temperature: 27°C[0m
+[0;32mI (741747) example: 7... [0m
+[0;32mI (741777) RX_TASK: Humadity: 47%[0m
+[0;32mI (741777) RX_TASK: Temperature: 27°C[0m
+[0;32mI (742747) example: 6... [0m
+[0;32mI (742807) RX_TASK: Humadity: 47%[0m
+[0;32mI (742807) RX_TASK: Temperature: 27°C[0m
+[0;32mI (743747) example: 5... [0m
+[0;32mI (743827) RX_TASK: Humadity: 47%[0m
+[0;32mI (743827) RX_TASK: Temperature: 27°C[0m
+[0;32mI (744747) example: 4... [0m
+[0;32mI (744857) RX_TASK: Humadity: 47%[0m
+[0;32mI (744857) RX_TASK: Temperature: 27°C[0m
+[0;32mI (745747) example: 3... [0m
+[0;32mI (745877) RX_TASK: Humadity: 46%[0m
+[0;32mI (745877) RX_TASK: Temperature: 27°C[0m
+[0;32mI (746747) example: 2... [0m
+[0;32mI (746907) RX_TASK: Humadity: 46%[0m
+[0;32mI (746907) RX_TASK: Temperature: 27°C[0m
+[0;32mI (747747) example: 1... [0m
+[0;32mI (747927) RX_TASK: Humadity: 46%[0m
+[0;32mI (747927) RX_TASK: Temperature: 27°C[0m
+[0;32mI (748747) example: 

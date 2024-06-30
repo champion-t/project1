@@ -1,0 +1,51 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- idf_monitor on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081454: call_start_cpu1 at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7188: app_main at F:/ChampionT/DO_AN_I/main/main.c:161 (discriminator 1)
+[0m
+[0;33m0x40089973: _esp_error_check_failed at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081aba: panic_abort at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x4008997d: esp_system_abort at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40090a5a: abort at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/abort.c:38
+[0m
+[0;33m0x40089973: _esp_error_check_failed at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d7188: app_main at F:/ChampionT/DO_AN_I/main/main.c:161 (discriminator 1)
+[0m
+[0;33m0x401541b3: main_task at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4008c391: vPortTaskWrapper at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081454: call_start_cpu1 at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40089973: _esp_error_check_failed at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081aba: panic_abort at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x4008997d: esp_system_abort at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40090a5a: abort at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/abort.c:38
+[0m
+[0;33m0x40089973: _esp_error_check_failed at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d7188: app_main at F:/ChampionT/DO_AN_I/main/main.c:161 (discriminator 1)
+[0m
+[0;33m0x401541b3: main_task at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4008c391: vPortTaskWrapper at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081454: call_start_cpu1 at F:/ChampionT/esp32/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

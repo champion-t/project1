@@ -1,0 +1,300 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 00:26:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22144h (139588) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0003216c vaddr=3ffb0000 size=03730h ( 14128) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000358a4 vaddr=40080000 size=0a774h ( 42868) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=86004h (548868) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=000c602c vaddr=4008a774 size=0bcb4h ( 48308) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (421) cpu_start: Multicore app[0m
+[0;32mI (421) cpu_start: Pro cpu up.[0m
+[0;32mI (421) cpu_start: Starting app cpu, entry point is 0x40081454[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (439) cpu_start: Pro cpu start user code[0m
+[0;32mI (439) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (439) cpu_start: Application information:[0m
+[0;32mI (444) cpu_start: Project name:     DO_AN_I[0m
+[0;32mI (449) cpu_start: App version:      1[0m
+[0;32mI (453) cpu_start: Compile time:     Jun  8 2024 00:25:43[0m
+[0;32mI (459) cpu_start: ELF file SHA256:  37009a0487f76216...[0m
+[0;32mI (465) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (470) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (475) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (480) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (485) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (492) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFB7F08 len 000280F8 (160 KiB): DRAM[0m
+[0;32mI (504) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (517) heap_init: At 40096428 len 00009BD8 (38 KiB): IRAM[0m
+[0;32mI (525) spi_flash: detected chip: generic[0m
+[0;32mI (528) spi_flash: flash io: dio[0m
+[0;32mI (533) app_start: Starting scheduler on CPU0[0m
+[0;32mI (537) app_start: Starting scheduler on CPU1[0m
+[0;32mI (537) main_task: Started on CPU0[0m
+[0;32mI (547) main_task: Calling app_main()[0m
+[0;32mI (597) example_connect: Start example_connect.[0m
+I (607) wifi:wifi driver task: 3ffc142c, prio:23, stack:6656, core=0
+I (627) wifi:wifi firmware version: ce9244d
+I (627) wifi:wifi certification version: v7.0
+I (627) wifi:config NVS flash: enabled
+I (627) wifi:config nano formating: disabled
+I (637) wifi:Init data frame dynamic rx buffer num: 32
+I (637) wifi:Init management frame dynamic rx buffer num: 32
+I (647) wifi:Init management short buffer num: 32
+I (647) wifi:Init dynamic tx buffer num: 32
+I (657) wifi:Init static rx buffer size: 1600
+I (657) wifi:Init static rx buffer num: 10
+I (657) wifi:Init dynamic rx buffer num: 32
+[0;32mI (667) wifi_init: rx ba win: 6[0m
+[0;32mI (667) wifi_init: tcpip mbox: 32[0m
+[0;32mI (667) wifi_init: udp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp tx win: 5744[0m
+[0;32mI (687) wifi_init: tcp rx win: 5744[0m
+[0;32mI (687) wifi_init: tcp mss: 1440[0m
+[0;32mI (687) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (697) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (707) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (817) wifi:mode : sta (fc:b4:67:51:10:c0)
+I (817) wifi:enable tsf
+[0;32mI (817) example_connect: Connecting to Tang4...[0m
+[0;32mI (827) example_connect: Waiting for IP(s)[0m
+[0;32mI (1997) RX_TASK: Humadity: 77%[0m
+[0;32mI (1997) RX_TASK: Temperature: 30°C[0m
+[0;32mI (3017) RX_TASK: Humadity: 77%[0m
+[0;32mI (3017) RX_TASK: Temperature: 30°C[0m
+I (3237) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+[0;32mI (4047) RX_TASK: Humadity: 77%[0m
+[0;32mI (4047) RX_TASK: Temperature: 30°C[0m
+I (4397) wifi:state: init -> auth (b0)
+I (4407) wifi:state: auth -> assoc (0)
+I (4457) wifi:state: assoc -> run (10)
+W (4547) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (4547) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (4547) wifi:[ADDBA]rx delba, code:39, delete tid:3
+[0;32mI (5067) RX_TASK: Humadity: 77%[0m
+[0;32mI (5067) RX_TASK: Temperature: 30°C[0m
+I (5607) wifi:connected with Tang4, aid = 3, channel 2, 40U, bssid = 48:22:54:6c:ed:ba
+I (5607) wifi:security: WPA2-PSK, phy: bgn, rssi: -65
+I (5607) wifi:pm start, type: 1
+
+I (5677) wifi:<ba-add>idx:0 (ifx:0, 48:22:54:6c:ed:ba), tid:3, ssn:1, winSize:64
+I (5687) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (6097) RX_TASK: Humadity: 77%[0m
+[0;32mI (6097) RX_TASK: Temperature: 30°C[0m
+W (6817) wifi:[ADDBA]rx delba, code:39, delete tid:3
+I (6817) wifi:<ba-del>idx:0, tid:3
+[0;32mI (7117) RX_TASK: Humadity: 77%[0m
+[0;32mI (7117) RX_TASK: Temperature: 30°C[0m
+[0;32mI (7597) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:feb4:67ff:fe51:10c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (7657) wifi:<ba-add>idx:0 (ifx:0, 48:22:54:6c:ed:ba), tid:3, ssn:1, winSize:64
+[0;32mI (8147) RX_TASK: Humadity: 77%[0m
+[0;32mI (8147) RX_TASK: Temperature: 30°C[0m
+[0;32mI (9167) RX_TASK: Humadity: 77%[0m
+[0;32mI (9167) RX_TASK: Temperature: 30°C[0m
+I (9807) wifi:<ba-add>idx:1 (ifx:0, 48:22:54:6c:ed:ba), tid:0, ssn:3, winSize:64
+W (9817) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (9817) wifi:<ba-del>idx:1, tid:0
+W (9827) wifi:[ADDBA]rx delba, code:39, delete tid:3
+I (9827) wifi:<ba-del>idx:0, tid:3
+[0;32mI (10197) RX_TASK: Humadity: 77%[0m
+[0;32mI (10197) RX_TASK: Temperature: 30°C[0m
+I (10817) wifi:<ba-add>idx:0 (ifx:0, 48:22:54:6c:ed:ba), tid:0, ssn:4, winSize:64
+W (10817) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (10817) wifi:<ba-del>idx:0, tid:0
+[0;32mI (11217) RX_TASK: Humadity: 77%[0m
+[0;32mI (11217) RX_TASK: Temperature: 30°C[0m
+I (11647) wifi:<ba-add>idx:0 (ifx:0, 48:22:54:6c:ed:ba), tid:3, ssn:2, winSize:64
+I (11747) wifi:<ba-add>idx:1 (ifx:0, 48:22:54:6c:ed:ba), tid:0, ssn:5, winSize:64
+[0;32mI (12247) RX_TASK: Humadity: 77%[0m
+[0;32mI (12247) RX_TASK: Temperature: 30°C[0m
+[0;32mI (13267) RX_TASK: Humadity: 77%[0m
+[0;32mI (13267) RX_TASK: Temperature: 30°C[0m
+[0;32mI (14297) RX_TASK: Humadity: 77%[0m
+[0;32mI (14297) RX_TASK: Temperature: 30°C[0m
+[0;32mI (15317) RX_TASK: Humadity: 77%[0m
+[0;32mI (15317) RX_TASK: Temperature: 30°C[0m
+[0;32mI (16347) RX_TASK: Humadity: 77%[0m
+[0;32mI (16347) RX_TASK: Temperature: 30°C[0m
+[0;32mI (17367) RX_TASK: Humadity: 77%[0m
+[0;32mI (17367) RX_TASK: Temperature: 30°C[0m
+[0;32mI (18397) RX_TASK: Humadity: 77%[0m
+[0;32mI (18397) RX_TASK: Temperature: 30°C[0m
+[0;32mI (19417) RX_TASK: Humadity: 77%[0m
+[0;32mI (19417) RX_TASK: Temperature: 30°C[0m
+[0;32mI (20447) RX_TASK: Humadity: 77%[0m
+[0;32mI (20447) RX_TASK: Temperature: 30°C[0m
+[0;32mI (21467) RX_TASK: Humadity: 77%[0m
+[0;32mI (21467) RX_TASK: Temperature: 30°C[0m
+[0;32mI (22497) RX_TASK: Humadity: 77%[0m
+[0;32mI (22497) RX_TASK: Temperature: 30°C[0m
+[0;32mI (23517) RX_TASK: Humadity: 77%[0m
+[0;32mI (23517) RX_TASK: Temperature: 30°C[0m
+[0;32mI (24547) RX_TASK: Humadity: 77%[0m
+[0;32mI (24547) RX_TASK: Temperature: 30°C[0m
+[0;32mI (25567) RX_TASK: Humadity: 77%[0m
+[0;32mI (25567) RX_TASK: Temperature: 30°C[0m
+[0;32mI (26597) RX_TASK: Humadity: 77%[0m
+[0;32mI (26597) RX_TASK: Temperature: 30°C[0m
+[0;32mI (27617) RX_TASK: Humadity: 77%[0m
+[0;32mI (27617) RX_TASK: Temperature: 30°C[0m
+[0;32mI (28647) RX_TASK: Humadity: 77%[0m
+[0;32mI (28647) RX_TASK: Temperature: 30°C[0m
+[0;32mI (29667) RX_TASK: Humadity: 77%[0m
+[0;32mI (29667) RX_TASK: Temperature: 30°C[0m
+[0;32mI (30697) RX_TASK: Humadity: 77%[0m
+[0;32mI (30697) RX_TASK: Temperature: 30°C[0m
+[0;32mI (31717) RX_TASK: Humadity: 77%[0m
+[0;32mI (31717) RX_TASK: Temperature: 30°C[0m
+[0;32mI (32747) RX_TASK: Humadity: 77%[0m
+[0;32mI (32747) RX_TASK: Temperature: 30°C[0m
+[0;32mI (33767) RX_TASK: Humadity: 77%[0m
+[0;32mI (33767) RX_TASK: Temperature: 30°C[0m
+[0;32mI (34797) RX_TASK: Humadity: 77%[0m
+[0;32mI (34797) RX_TASK: Temperature: 30°C[0m
+[0;32mI (35817) RX_TASK: Humadity: 77%[0m
+[0;32mI (35817) RX_TASK: Temperature: 30°C[0m
+[0;32mI (36847) RX_TASK: Humadity: 77%[0m
+[0;32mI (36847) RX_TASK: Temperature: 30°C[0m
+[0;32mI (37867) RX_TASK: Humadity: 77%[0m
+[0;32mI (37867) RX_TASK: Temperature: 30°C[0m
+[0;32mI (38897) RX_TASK: Humadity: 77%[0m
+[0;32mI (38897) RX_TASK: Temperature: 30°C[0m
+[0;32mI (39917) RX_TASK: Humadity: 77%[0m
+[0;32mI (39917) RX_TASK: Temperature: 30°C[0m
+[0;32mI (40947) RX_TASK: Humadity: 77%[0m
+[0;32mI (40947) RX_TASK: Temperature: 30°C[0m
+[0;32mI (41967) RX_TASK: Humadity: 77%[0m
+[0;32mI (41967) RX_TASK: Temperature: 30°C[0m
+[0;32mI (42997) RX_TASK: Humadity: 77%[0m
+[0;32mI (42997) RX_TASK: Temperature: 30°C[0m
+[0;32mI (44017) RX_TASK: Humadity: 77%[0m
+[0;32mI (44017) RX_TASK: Temperature: 30°C[0m
+[0;32mI (45047) RX_TASK: Humadity: 77%[0m
+[0;32mI (45047) RX_TASK: Temperature: 30°C[0m
+[0;32mI (46067) RX_TASK: Humadity: 77%[0m
+[0;32mI (46067) RX_TASK: Temperature: 30°C[0m
+[0;32mI (46617) esp_netif_handlers: example_netif_sta ip: 192.168.0.109, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (46617) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.109[0m
+[0;32mI (46627) example_common: Connected to example_netif_sta[0m
+[0;32mI (46627) example_common: - IPv4 address: 192.168.0.109,[0m
+[0;32mI (46637) example_common: - IPv6 address: fe80:0000:0000:0000:feb4:67ff:fe51:10c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (46647) main_task: Returned from app_main()[0m
+[0;32mI (47097) RX_TASK: Humadity: 77%[0m
+[0;32mI (47097) RX_TASK: Temperature: 30°C[0m
+[0;32mI (48117) RX_TASK: Humadity: 77%[0m
+[0;32mI (48117) RX_TASK: Temperature: 30°C[0m
+[0;32mI (49147) RX_TASK: Humadity: 77%[0m
+[0;32mI (49147) RX_TASK: Temperature: 30°C[0m
+[0;32mI (50167) RX_TASK: Humadity: 77%[0m
+[0;32mI (50167) RX_TASK: Temperature: 30°C[0m
+[0;32mI (51197) RX_TASK: Humadity: 77%[0m
+[0;32mI (51197) RX_TASK: Temperature: 30°C[0m
+[0;32mI (52217) RX_TASK: Humadity: 77%[0m
+[0;32mI (52217) RX_TASK: Temperature: 30°C[0m
+[0;32mI (53247) RX_TASK: Humadity: 77%[0m
+[0;32mI (53247) RX_TASK: Temperature: 30°C[0m
+[0;31mE (53647) example: DNS lookup failed err=202 res=0x0[0m
+[0;32mI (54267) RX_TASK: Humadity: 77%[0m
+[0;32mI (54267) RX_TASK: Temperature: 30°C[0m
+[0;32mI (55297) RX_TASK: Humadity: 77%[0m
+[0;32mI (55297) RX_TASK: Temperature: 30°C[0m
+W (55827) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (55827) wifi:<ba-del>idx:1, tid:0
+W (55827) wifi:[ADDBA]rx delba, code:39, delete tid:3
+I (55827) wifi:<ba-del>idx:0, tid:3
+[0;32mI (56317) RX_TASK: Humadity: 77%[0m
+[0;32mI (56317) RX_TASK: Temperature: 30°C[0m
+[0;32mI (57347) RX_TASK: Humadity: 77%[0m
+[0;32mI (57347) RX_TASK: Temperature: 30°C[0m
+[0;32mI (58367) RX_TASK: Humadity: 77%[0m
+[0;32mI (58367) RX_TASK: Temperature: 30°C[0m
+[0;32mI (59397) RX_TASK: Humadity: 77%[0m
+[0;32mI (59397) RX_TASK: Temperature: 30°C[0m
+[0;32mI (60417) RX_TASK: Humadity: 77%[0m
+[0;32mI (60417) RX_TASK: Temperature: 30°C[0m
+[0;32mI (61447) RX_TASK: Humadity: 77%[0m
+[0;32mI (61447) RX_TASK: Temperature: 30°C[0m
+[0;31mE (61647) example: DNS lookup failed err=202 res=0x0[0m
+[0;32mI (62467) RX_TASK: Humadity: 77%[0m
+[0;32mI (62467) RX_TASK: Temperature: 30°C[0m
+[0;32mI (63497) RX_TASK: Humadity: 77%[0m
+[0;32mI (63497) RX_TASK: Temperature: 30°C[0m
+[0;32mI (64517) RX_TASK: Humadity: 77%[0m
+[0;32mI (64517) RX_TASK: Temperature: 30°C[0m
+[0;32mI (65547) RX_TASK: Humadity: 77%[0m
+[0;32mI (65547) RX_TASK: Temperature: 30°C[0m
+[0;32mI (66567) RX_TASK: Humadity: 77%[0m
+[0;32mI (66567) RX_TASK: Temperature: 30°C[0m
+[0;32mI (67597) RX_TASK: Humadity: 77%[0m
+[0;32mI (67597) RX_TASK: Temperature: 30°C[0m
+[0;32mI (68617) RX_TASK: Humadity: 77%[0m
+[0;32mI (68617) RX_TASK: Temperature: 30°C[0m
+[0;32mI (69647) RX_TASK: Humadity: 77%[0m
+[0;32mI (69647) RX_TASK: Temperature: 30°C[0m
+[0;31mE (69647) example: DNS lookup failed err=202 res=0x0[0m
+[0;32mI (70667) RX_TASK: Humadity: 77%[0m
+[0;32mI (70667) RX_TASK: Temperature: 30°C[0m
+I (71667) wifi:<ba-add>idx:0 (ifx:0, 48:22:54:6c:ed:ba), tid:0, ssn:11, winSize:64
+[0;32mI (71677) example: DNS lookup succeeded. IP=18.235.81.189[0m
+[0;32mI (71677) example: ... allocated socket[0m
+[0;32mI (71697) RX_TASK: Humadity: 77%[0m
+[0;32mI (71697) RX_TASK: Temperature: 30°C[0m
+[0;32mI (72717) RX_TASK: Humadity: 77%[0m
+[0;32mI (72717) RX_TASK: Temperature: 30°C[0m
+[0;32mI (73747) RX_TASK: Humadity: 77%[0m
+[0;32mI (73747) RX_TASK: Temperature: 30°C[0m
+[0;32mI (74767) RX_TASK: Humadity: 77%[0m
+[0;32mI (74767) RX_TASK: Temperature: 30°C[0m
+[0;32mI (75797) RX_TASK: Humadity: 77%[0m
+[0;32mI (75797) RX_TASK: Temperature: 30°C[0m
+[0;32mI (76817) RX_TASK: Humadity: 77%[0m
+[0;32mI (76817) RX_TASK: Temperature: 30°C[0m
+W (76827) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (76827) wifi:<ba-del>idx:0, tid:0
+I (77687) wifi:<ba-add>idx:0 (ifx:0, 48:22:54:6c:ed:ba), tid:0, ssn:13, winSize:64
+[0;32mI (77737) example: ... connected[0m
+[0;32mI (77747) example: ... socket send success[0m
+[0;32mI (77747) example: ... set socket receiving timeout success[0m
+[0;32mI (77847) RX_TASK: Humadity: 77%[0m
+[0;32mI (77847) RX_TASK: Temperature: 30°C[0m
+[0;32mI (78867) RX_TASK: Humadity: 77%[0m
+[0;32mI (78867) RX_TASK: Temperature: 30°C[0m
+[0;32mI (79897) RX_TASK: Humadity: 77%[0m
+[0;32mI (79897) RX_TASK: Temperature: 30°C[0m
+[0;32mI (80917) RX_TASK: Humadity: 77%[0m
+[0;32mI (80917) RX_TASK: Temperature: 30°C[0m
+[0;32mI (81947) RX_TASK: Humadity: 77%[0m
+[0;32mI (81947) RX_TASK: Temperature: 30°C[0m
+[0;32mI (82747) example: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;32mI (82747) example: 10... [0m
+W (82827) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (82827) wifi:<ba-del>idx:0, tid:0
+[0;32mI (82967) RX_TASK: Humadity: 77%[0m
+[0;32mI (82967) RX_TASK: Temperature: 30°C[0m
